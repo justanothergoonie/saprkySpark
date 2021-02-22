@@ -1,18 +1,4 @@
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-
-TABLE OF CONTENTS:
-
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
-/* 0. Reset ================================= */
+/* Imports ================================= */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -148,92 +134,312 @@ table {
 	border-spacing: 0;
 }
 
-/* 1. Main Layout ================================= */
-* {
-	box-sizing: border-box;
+.hero {
+	background-image: url(/dist/img/energy-poverty_opt.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: 75%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 811px;
 }
 
-body {
-	background: #ccc;
+.hero .psudo-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-/* 2. Content ================================= */
-.floating-box {
+.hero .psudo-header h1 {
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	font-size: 1.2rem;
+	margin-left: 5%;
+}
+
+.hero .psudo-header .hamburger {
+	width: 50px;
+	height: 50px;
 	position: relative;
-	font-family: sans-serif;
-	width: 90%;
-	max-width: 500px;
-	margin: 140px auto;
-	padding: 30px 20px 30px 30px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 5px solid rgba(0, 0, 0, 0);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin-right: 5%;
+	margin-top: 2%;
 }
 
-.floating-box .foreground {
-	position: relative;
-	z-index: 2;
-	transform: translateZ(100px);
+@media screen and (min-width: 768px) {
+	.hero .psudo-header .hamburger {
+		display: none;
+	}
 }
 
-.floating-box .background {
+.hero .psudo-header .hamburger div {
+	height: 2px;
+	width: 30px;
+	background-color: white;
 	position: absolute;
+	transition: all 0.3s ease;
+}
+
+.hero .psudo-header .hamburger div.hamburgerLineOne {
+	top: 7px;
+	left: 5px;
+}
+
+.hero .psudo-header .hamburger div.hamburgerLineTwo {
+	top: 17px;
+	left: 5px;
+}
+
+.hero .psudo-header .hamburger div.hamburgerLineThree {
+	top: 27px;
+	left: 5px;
+}
+
+.hero .psudo-header .hamburger:hover {
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+
+.hero .psudo-header .hamburger:hover .hamburgerLineOne {
+	transform: translateY(10px) rotate(45deg);
+	transition: all 0.5s ease;
+}
+
+.hero .psudo-header .hamburger:hover .hamburgerLineTwo {
+	opacity: 0;
+	transition: all 0.2s ease;
+}
+
+.hero .psudo-header .hamburger:hover .hamburgerLineThree {
+	transform: translateY(-10px) rotate(-45deg);
+	transition: all 0.5s ease;
+}
+
+.hero .psudo-header .hamburger.showing {
+	display: block;
+	max-height: 1000px;
+	transition: 0.5s ease;
+}
+
+.hero nav {
+	display: none;
+}
+
+.hero nav.showing {
+	display: block;
+	max-height: 1000px;
+	transition: 0.5s ease;
+}
+
+@media screen and (min-width: 768px) {
+	.hero nav {
+		display: flex;
+	}
+}
+
+.hero .logo {
+	width: 153px;
+	enable-background: new 0 0 159.9 105;
+	margin: 5% auto;
+}
+
+.second-section .second-section-picture {
+	background-image: url(/dist/img/o-INDIA-NO-ELECTRICITY-VILLAGE-facebook_compressed.jpg);
+	height: 50vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.second-section .about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #050505;
+	color: #a3a3a3;
+	height: 50vh;
+}
+
+.second-section .about .idea-bulb {
+	transform: rotate(180deg);
+}
+
+.second-section .about .idea-bulb img {
+	width: 150px;
+}
+
+.second-section .about p {
+	text-align: center;
+	width: 70%;
+	font-size: 1.1rem;
+}
+
+.second-section .about .light-spot {
+	margin-bottom: 5%;
+}
+
+.second-section .about .light-spot img {
+	width: 400px;
+}
+
+.third-section .third-section-picture {
+	background-image: url(/dist/img/1_uD-8jrFwssqXbGAvImPj_Q.jpeg);
+	height: 50vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.third-section .about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #050505;
+	color: #a3a3a3;
+	height: 50vh;
+}
+
+.third-section .about .ceiling-lamp img {
+	width: 150px;
+}
+
+.third-section .about p {
+	text-align: center;
+	width: 70%;
+	font-size: 1.1rem;
+}
+
+.third-section .about .light-spot {
+	margin-bottom: 5%;
+}
+
+.third-section .about .light-spot img {
+	width: 400px;
+}
+
+.fourth-section .fourth-section-picture {
+	background-image: url(/dist/img/1541578076606.jpeg);
+	height: 50vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.fourth-section .about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #050505;
+	color: #a3a3a3;
+	height: 50vh;
+}
+
+.fourth-section .about .stage-lights {
+	display: flex;
 	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: white;
+	justify-content: space-between;
+}
+
+.fourth-section .about .stage-lights img {
+	width: 150px;
+	margin: 0 2%;
+}
+
+.fourth-section .about p {
+	text-align: center;
+	width: 92.5%;
+	font-size: 1.1rem;
+}
+
+.fourth-section .about .light-spot {
+	margin-bottom: 5%;
+}
+
+.fourth-section .about .light-spot img {
+	width: 400px;
+}
+
+.fifth-section .fifth-section-picture {
+	background-image: url(/dist/img/4058016965_db02c42403_b.jpg);
+	height: 50vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.fifth-section .about {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #050505;
+	color: #a3a3a3;
+	height: 50vh;
+	z-index: -7;
+}
+
+.fifth-section .about .desk-light {
+	z-index: 0;
+	position: absolute;
+	/* bottom: 100%; */
+	margin-bottom: 12%;
+	margin-left: 12%;
+}
+
+.fifth-section .about .desk-light img {
+	width: 350px;
+}
+
+.fifth-section .about p {
+	text-align: center;
+	width: 95%;
+	font-size: 1rem;
+	margin-bottom: 6%;
 	z-index: 1;
-	transition: 0.2s;
-	transform: translateX(20px) perspective(600px) rotateY(15deg);
 }
 
-.floating-box:hover .background {
-	transform: translateX(-30px) perspective(600px) rotateY(-15deg);
+.fifth-section .about .light-spot {
+	margin-bottom: 5%;
 }
 
-.floating-box .logo {
-	position: absolute;
-	top: -30px;
-	width: 60px;
-	z-index: 2;
-	transform: translateZ(100px);
-	transition: 0.3s;
+.fifth-section .about .light-spot img {
+	width: 400px;
 }
 
-.floating-box .logo:hover {
-	-ms-transform: rotate(-0.4turn);
-	    transform: rotate(-0.4turn);
+footer {
+	background-color: #050505;
 }
 
-.floating-box h1 {
-	font-weight: 700;
-	font-size: 22pt;
-	margin: 15px 0;
+footer .legal {
+	color: #a3a3a3;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	margin: 0 auto;
+	height: 60px;
+	width: 60%;
 }
 
-.floating-box p {
-	color: #777;
-	line-height: 140%;
+footer .socials {
+	display: flex;
+	justify-content: space-evenly;
 }
 
-.floating-box p.github {
-	font-size: 0.8em;
+footer .socials a {
+	padding: 5%;
 }
 
-.floating-box p.github a {
-	opacity: 0.2;
-	transition: 0.3s;
-}
-
-.floating-box p.github a:hover {
-	opacity: 1;
-	color: red;
-}
-
-.floating-box code {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	font-size: 0.8em;
-	opacity: 0.2;
+footer .socials a img {
+	width: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

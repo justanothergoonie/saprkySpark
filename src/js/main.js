@@ -1,12 +1,11 @@
 console.log(`Hello World from main.js! 
 Change this message, and make sure it changes in the browser 
-to verify that you're working in the right files.`)
+to verify that you're working in the right files.`);
+let hamburgerButton = document.querySelector('.hamburger');
 
-console.log('spark spark boo BOOM! LOL its sam')
-<<<<<<< Updated upstream
-console.log('Can sam play with website?')
-=======
-console.log('Can sam play with website?')
-console.log('help')
-console.log('help help')
->>>>>>> Stashed changes
+let navList = document.querySelector('nav');
+
+let toggleNav = function () {
+	navList.classList.toggle('showing');
+};
+hamburgerButton.addEventListener('click', toggleNav);
