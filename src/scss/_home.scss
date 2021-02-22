@@ -216,12 +216,14 @@
 		z-index: -7;
 		.desk-light {
 			z-index: 0;
-			position: absolute;
-			/* bottom: 100%; */
-			margin-bottom: 12%;
-			margin-left: 12%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			img {
-				width: 350px;
+				width: 300px;
+				position: absolute;
+				padding-bottom: 4%;
+				margin-left: 6%;
 			}
 		}
 		p {
