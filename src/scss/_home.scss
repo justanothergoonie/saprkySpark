@@ -4,99 +4,160 @@
 	background-repeat: no-repeat;
 	background-position-x: 75%;
 	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	height: 811px;
-	.psudo-header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		h1 {
-			color: white;
-			font-family: 'Heebo', sans-serif;
-			font-size: 1.2rem;
-			margin-left: 5%;
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	font-size: 1.2rem;
+	height: 100vh;
+	width: 100%;
+	&.mobile {
+		@include bp-med {
+			display: none;
 		}
-		.hamburger {
-			width: 50px;
-			height: 50px;
-			position: relative;
-			background-color: rgba($color: #000000, $alpha: 0);
-			border: 5px solid rgba($color: #000000, $alpha: 0);
-			cursor: pointer;
-			transition: all 0.3s ease;
-			margin-right: 5%;
-			margin-top: 2%;
-			@include bp-med {
-				display: none;
+
+		justify-content: space-between;
+		flex-direction: column;
+
+		.psudo-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			h1 {
+				margin-left: 5%;
 			}
-			div {
-				height: 2px;
-				width: 30px;
-				background-color: white;
-				position: absolute;
+			.hamburger {
+				width: 50px;
+				height: 50px;
+				position: relative;
+				background-color: rgba($color: #000000, $alpha: 0);
+				border: 5px solid rgba($color: #000000, $alpha: 0);
+				cursor: pointer;
 				transition: all 0.3s ease;
-				&.hamburgerLineOne {
-					top: 7px;
-					left: 5px;
+				margin-right: 5%;
+				margin-top: 2%;
+				@include bp-med {
+					display: none;
 				}
-				&.hamburgerLineTwo {
-					top: 17px;
-					left: 5px;
+				div {
+					height: 2px;
+					width: 30px;
+					background-color: white;
+					position: absolute;
+					transition: all 0.3s ease;
+					&.hamburgerLineOne {
+						top: 7px;
+						left: 5px;
+					}
+					&.hamburgerLineTwo {
+						top: 17px;
+						left: 5px;
+					}
+					&.hamburgerLineThree {
+						top: 27px;
+						left: 5px;
+					}
 				}
-				&.hamburgerLineThree {
-					top: 27px;
-					left: 5px;
+				&:hover {
+					border-radius: 50%;
+					transition: all 0.3s ease;
+					.hamburgerLineOne {
+						transform: translateY(10px) rotate(45deg);
+						transition: all 0.5s ease;
+					}
+					.hamburgerLineTwo {
+						opacity: 0;
+						transition: all 0.2s ease;
+					}
+					.hamburgerLineThree {
+						transform: translateY(-10px) rotate(-45deg);
+						transition: all 0.5s ease;
+					}
+				}
+				&.showing {
+					display: block;
+					max-height: 1000px;
+					transition: 0.5s ease;
 				}
 			}
-			&:hover {
-				border-radius: 50%;
-				transition: all 0.3s ease;
-				.hamburgerLineOne {
-					transform: translateY(10px) rotate(45deg);
-					transition: all 0.5s ease;
-				}
-				.hamburgerLineTwo {
-					opacity: 0;
-					transition: all 0.2s ease;
-				}
-				.hamburgerLineThree {
-					transform: translateY(-10px) rotate(-45deg);
-					transition: all 0.5s ease;
-				}
-			}
+		}
+		nav {
+			display: none;
 			&.showing {
 				display: block;
 				max-height: 1000px;
 				transition: 0.5s ease;
 			}
+			@include bp-med {
+				display: flex;
+			}
+		}
+		.logo {
+			width: 153px;
+			enable-background: new 0 0 159.9 105;
+			margin: 5% auto;
 		}
 	}
-	nav {
+
+	&.desktop {
 		display: none;
-		&.showing {
-			display: block;
-			max-height: 1000px;
-			transition: 0.5s ease;
-		}
 		@include bp-med {
 			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.psudo-header {
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: flex-end;
+				align-items: center;
+				margin: 3% 10%;
+				.logo {
+					width: 150px;
+				}
+				h1 {
+					font-size: 2rem;
+					margin-left: 3%;
+				}
+			}
+			nav {
+				display: flex;
+				justify-content: flex-end;
+				font-size: 1.7rem;
+				ul {
+					display: flex;
+					justify-content: space-around;
+					width: 45%;
+
+					margin: 1% 5%;
+					li {
+						margin: 1%;
+						a {
+							color: white;
+							text-decoration: none;
+							&.active {
+								border-bottom: 2px solid white;
+							}
+						}
+					}
+				}
+			}
 		}
-	}
-	.logo {
-		width: 153px;
-		enable-background: new 0 0 159.9 105;
-		margin: 5% auto;
 	}
 }
 
 .second-section {
+	@include bp-med {
+		display: flex;
+	}
 	.second-section-picture {
 		background-image: url(/dist/img/o-INDIA-NO-ELECTRICITY-VILLAGE-facebook_compressed.jpg);
 		height: 50vh;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom;
+		@include bp-med {
+			height: 100vh;
+			width: 50vw;
+		}
 	}
 	.about {
 		display: flex;
@@ -106,32 +167,54 @@
 		background-color: #050505;
 		color: #a3a3a3;
 		height: 50vh;
+		overflow: hidden;
+		@include bp-med {
+			height: 100vh;
+			width: 50vw;
+		}
 		.idea-bulb {
 			transform: rotate(180deg);
 			img {
 				width: 150px;
+				@include bp-med {
+					width: 230px;
+				}
 			}
 		}
 		p {
 			text-align: center;
 			width: 70%;
 			font-size: 1.1rem;
+			@include bp-med {
+				font-size: 1.8rem;
+			}
 		}
 		.light-spot {
 			margin-bottom: 5%;
 			img {
 				width: 400px;
+				@include bp-med {
+					width: 550px;
+				}
 			}
 		}
 	}
 }
 .third-section {
+	@include bp-med {
+		display: flex;
+		flex-direction: row-reverse;
+	}
 	.third-section-picture {
 		background-image: url(/dist/img/1_uD-8jrFwssqXbGAvImPj_Q.jpeg);
 		height: 50vh;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom;
+		@include bp-med {
+			height: 100vh;
+			width: 50vw;
+		}
 	}
 	.about {
 		display: flex;
@@ -141,31 +224,52 @@
 		background-color: #050505;
 		color: #a3a3a3;
 		height: 50vh;
+		overflow: hidden;
+		@include bp-med {
+			height: 100vh;
+			width: 50vw;
+		}
 		.ceiling-lamp {
 			img {
 				width: 150px;
+				@include bp-med {
+					width: 230px;
+				}
 			}
 		}
 		p {
 			text-align: center;
 			width: 70%;
 			font-size: 1.1rem;
+			@include bp-med {
+				font-size: 1.8rem;
+			}
 		}
 		.light-spot {
 			margin-bottom: 5%;
 			img {
 				width: 400px;
+				@include bp-med {
+					width: 550px;
+				}
 			}
 		}
 	}
 }
 .fourth-section {
+	@include bp-med {
+		display: flex;
+	}
 	.fourth-section-picture {
 		background-image: url(/dist/img/1541578076606.jpeg);
 		height: 50vh;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom;
+		@include bp-med {
+			height: 100vh;
+			width: 50vw;
+		}
 	}
 	.about {
 		display: flex;
@@ -175,6 +279,11 @@
 		background-color: #050505;
 		color: #a3a3a3;
 		height: 50vh;
+		overflow: hidden;
+		@include bp-med {
+			height: 100vh;
+			width: 50vw;
+		}
 		.stage-lights {
 			display: flex;
 			width: 100%;
@@ -182,28 +291,48 @@
 			img {
 				width: 150px;
 				margin: 0 2%;
+				@include bp-med {
+					width: 230px;
+					&:last-child {
+						display: none;
+					}
+				}
 			}
 		}
 		p {
 			text-align: center;
 			width: 92.5%;
 			font-size: 1.1rem;
+			@include bp-med {
+				font-size: 1.8rem;
+			}
 		}
 		.light-spot {
 			margin-bottom: 5%;
 			img {
 				width: 400px;
+				@include bp-med {
+					width: 550px;
+				}
 			}
 		}
 	}
 }
 .fifth-section {
+	@include bp-med {
+		display: flex;
+		flex-direction: row-reverse;
+	}
 	.fifth-section-picture {
 		background-image: url(/dist/img/4058016965_db02c42403_b.jpg);
 		height: 50vh;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: bottom;
+		@include bp-med {
+			height: 100vh;
+			width: 50vw;
+		}
 	}
 	.about {
 		display: flex;
@@ -213,7 +342,12 @@
 		background-color: #050505;
 		color: #a3a3a3;
 		height: 50vh;
-		z-index: -7;
+		overflow: hidden;
+
+		@include bp-med {
+			height: 100vh;
+			width: 50vw;
+		}
 		.desk-light {
 			z-index: 0;
 			display: flex;
@@ -232,11 +366,17 @@
 			font-size: 1rem;
 			margin-bottom: 6%;
 			z-index: 1;
+			@include bp-med {
+				font-size: 1.8rem;
+			}
 		}
 		.light-spot {
 			margin-bottom: 5%;
 			img {
 				width: 400px;
+				@include bp-med {
+					width: 550px;
+				}
 			}
 		}
 	}

@@ -139,31 +139,45 @@ body {
 	font-family: 'Heeboo', sans-serif;
 }
 
+p {
+	text-shadow: -2px 10px 12px rgba(163, 163, 163, 0.69);
+}
+
 .hero {
 	background-image: url(/dist/img/energy-poverty_opt.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-x: 75%;
 	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	height: 811px;
+	color: white;
+	font-family: 'Heebo', sans-serif;
+	font-size: 1.2rem;
+	height: 100vh;
+	width: 100%;
 }
 
-.hero .psudo-header {
+.hero.mobile {
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	.hero.mobile {
+		display: none;
+	}
+}
+
+.hero.mobile .psudo-header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.hero .psudo-header h1 {
-	color: white;
-	font-family: 'Heebo', sans-serif;
-	font-size: 1.2rem;
+.hero.mobile .psudo-header h1 {
 	margin-left: 5%;
 }
 
-.hero .psudo-header .hamburger {
+.hero.mobile .psudo-header .hamburger {
 	width: 50px;
 	height: 50px;
 	position: relative;
@@ -176,12 +190,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-	.hero .psudo-header .hamburger {
+	.hero.mobile .psudo-header .hamburger {
 		display: none;
 	}
 }
 
-.hero .psudo-header .hamburger div {
+.hero.mobile .psudo-header .hamburger div {
 	height: 2px;
 	width: 30px;
 	background-color: white;
@@ -189,69 +203,122 @@ body {
 	transition: all 0.3s ease;
 }
 
-.hero .psudo-header .hamburger div.hamburgerLineOne {
+.hero.mobile .psudo-header .hamburger div.hamburgerLineOne {
 	top: 7px;
 	left: 5px;
 }
 
-.hero .psudo-header .hamburger div.hamburgerLineTwo {
+.hero.mobile .psudo-header .hamburger div.hamburgerLineTwo {
 	top: 17px;
 	left: 5px;
 }
 
-.hero .psudo-header .hamburger div.hamburgerLineThree {
+.hero.mobile .psudo-header .hamburger div.hamburgerLineThree {
 	top: 27px;
 	left: 5px;
 }
 
-.hero .psudo-header .hamburger:hover {
+.hero.mobile .psudo-header .hamburger:hover {
 	border-radius: 50%;
 	transition: all 0.3s ease;
 }
 
-.hero .psudo-header .hamburger:hover .hamburgerLineOne {
+.hero.mobile .psudo-header .hamburger:hover .hamburgerLineOne {
 	-ms-transform: translateY(10px) rotate(45deg);
 	    transform: translateY(10px) rotate(45deg);
 	transition: all 0.5s ease;
 }
 
-.hero .psudo-header .hamburger:hover .hamburgerLineTwo {
+.hero.mobile .psudo-header .hamburger:hover .hamburgerLineTwo {
 	opacity: 0;
 	transition: all 0.2s ease;
 }
 
-.hero .psudo-header .hamburger:hover .hamburgerLineThree {
+.hero.mobile .psudo-header .hamburger:hover .hamburgerLineThree {
 	-ms-transform: translateY(-10px) rotate(-45deg);
 	    transform: translateY(-10px) rotate(-45deg);
 	transition: all 0.5s ease;
 }
 
-.hero .psudo-header .hamburger.showing {
+.hero.mobile .psudo-header .hamburger.showing {
 	display: block;
 	max-height: 1000px;
 	transition: 0.5s ease;
 }
 
-.hero nav {
+.hero.mobile nav {
 	display: none;
 }
 
-.hero nav.showing {
+.hero.mobile nav.showing {
 	display: block;
 	max-height: 1000px;
 	transition: 0.5s ease;
 }
 
 @media screen and (min-width: 768px) {
-	.hero nav {
+	.hero.mobile nav {
 		display: flex;
 	}
 }
 
-.hero .logo {
+.hero.mobile .logo {
 	width: 153px;
 	enable-background: new 0 0 159.9 105;
 	margin: 5% auto;
+}
+
+.hero.desktop {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.hero.desktop {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.hero.desktop .psudo-header {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 3% 10%;
+	}
+	.hero.desktop .psudo-header .logo {
+		width: 150px;
+	}
+	.hero.desktop .psudo-header h1 {
+		font-size: 2rem;
+		margin-left: 3%;
+	}
+	.hero.desktop nav {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 1.7rem;
+	}
+	.hero.desktop nav ul {
+		display: flex;
+		justify-content: space-around;
+		width: 45%;
+		margin: 1% 5%;
+	}
+	.hero.desktop nav ul li {
+		margin: 1%;
+	}
+	.hero.desktop nav ul li a {
+		color: white;
+		text-decoration: none;
+	}
+	.hero.desktop nav ul li a.active {
+		border-bottom: 2px solid white;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.second-section {
+		display: flex;
+	}
 }
 
 .second-section .second-section-picture {
@@ -262,6 +329,13 @@ body {
 	background-position: bottom;
 }
 
+@media screen and (min-width: 768px) {
+	.second-section .second-section-picture {
+		height: 100vh;
+		width: 50vw;
+	}
+}
+
 .second-section .about {
 	display: flex;
 	flex-direction: column;
@@ -270,6 +344,14 @@ body {
 	background-color: #050505;
 	color: #a3a3a3;
 	height: 50vh;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+	.second-section .about {
+		height: 100vh;
+		width: 50vw;
+	}
 }
 
 .second-section .about .idea-bulb {
@@ -281,10 +363,22 @@ body {
 	width: 150px;
 }
 
+@media screen and (min-width: 768px) {
+	.second-section .about .idea-bulb img {
+		width: 230px;
+	}
+}
+
 .second-section .about p {
 	text-align: center;
 	width: 70%;
 	font-size: 1.1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.second-section .about p {
+		font-size: 1.8rem;
+	}
 }
 
 .second-section .about .light-spot {
@@ -295,12 +389,32 @@ body {
 	width: 400px;
 }
 
+@media screen and (min-width: 768px) {
+	.second-section .about .light-spot img {
+		width: 550px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.third-section {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+
 .third-section .third-section-picture {
 	background-image: url(/dist/img/1_uD-8jrFwssqXbGAvImPj_Q.jpeg);
 	height: 50vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
+}
+
+@media screen and (min-width: 768px) {
+	.third-section .third-section-picture {
+		height: 100vh;
+		width: 50vw;
+	}
 }
 
 .third-section .about {
@@ -311,16 +425,36 @@ body {
 	background-color: #050505;
 	color: #a3a3a3;
 	height: 50vh;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+	.third-section .about {
+		height: 100vh;
+		width: 50vw;
+	}
 }
 
 .third-section .about .ceiling-lamp img {
 	width: 150px;
 }
 
+@media screen and (min-width: 768px) {
+	.third-section .about .ceiling-lamp img {
+		width: 230px;
+	}
+}
+
 .third-section .about p {
 	text-align: center;
 	width: 70%;
 	font-size: 1.1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.third-section .about p {
+		font-size: 1.8rem;
+	}
 }
 
 .third-section .about .light-spot {
@@ -331,12 +465,31 @@ body {
 	width: 400px;
 }
 
+@media screen and (min-width: 768px) {
+	.third-section .about .light-spot img {
+		width: 550px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.fourth-section {
+		display: flex;
+	}
+}
+
 .fourth-section .fourth-section-picture {
 	background-image: url(/dist/img/1541578076606.jpeg);
 	height: 50vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
+}
+
+@media screen and (min-width: 768px) {
+	.fourth-section .fourth-section-picture {
+		height: 100vh;
+		width: 50vw;
+	}
 }
 
 .fourth-section .about {
@@ -347,6 +500,14 @@ body {
 	background-color: #050505;
 	color: #a3a3a3;
 	height: 50vh;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+	.fourth-section .about {
+		height: 100vh;
+		width: 50vw;
+	}
 }
 
 .fourth-section .about .stage-lights {
@@ -360,10 +521,25 @@ body {
 	margin: 0 2%;
 }
 
+@media screen and (min-width: 768px) {
+	.fourth-section .about .stage-lights img {
+		width: 230px;
+	}
+	.fourth-section .about .stage-lights img:last-child {
+		display: none;
+	}
+}
+
 .fourth-section .about p {
 	text-align: center;
 	width: 92.5%;
 	font-size: 1.1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.fourth-section .about p {
+		font-size: 1.8rem;
+	}
 }
 
 .fourth-section .about .light-spot {
@@ -374,12 +550,32 @@ body {
 	width: 400px;
 }
 
+@media screen and (min-width: 768px) {
+	.fourth-section .about .light-spot img {
+		width: 550px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.fifth-section {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}
+
 .fifth-section .fifth-section-picture {
 	background-image: url(/dist/img/4058016965_db02c42403_b.jpg);
 	height: 50vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
+}
+
+@media screen and (min-width: 768px) {
+	.fifth-section .fifth-section-picture {
+		height: 100vh;
+		width: 50vw;
+	}
 }
 
 .fifth-section .about {
@@ -390,7 +586,14 @@ body {
 	background-color: #050505;
 	color: #a3a3a3;
 	height: 50vh;
-	z-index: -7;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+	.fifth-section .about {
+		height: 100vh;
+		width: 50vw;
+	}
 }
 
 .fifth-section .about .desk-light {
@@ -415,12 +618,24 @@ body {
 	z-index: 1;
 }
 
+@media screen and (min-width: 768px) {
+	.fifth-section .about p {
+		font-size: 1.8rem;
+	}
+}
+
 .fifth-section .about .light-spot {
 	margin-bottom: 5%;
 }
 
 .fifth-section .about .light-spot img {
 	width: 400px;
+}
+
+@media screen and (min-width: 768px) {
+	.fifth-section .about .light-spot img {
+		width: 550px;
+	}
 }
 
 footer {
