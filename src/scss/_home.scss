@@ -34,6 +34,7 @@
 				transition: all 0.3s ease;
 				margin-right: 5%;
 				margin-top: 2%;
+				z-index: 9999;
 				@include bp-med {
 					display: none;
 				}
@@ -72,22 +73,90 @@
 						transition: all 0.5s ease;
 					}
 				}
-				&.showing {
-					display: block;
-					max-height: 1000px;
-					transition: 0.5s ease;
+				&.focus {
+					border-radius: 50%;
+					transition: all 0.3s ease;
+					.hamburgerLineOne {
+						transform: translateY(10px) rotate(45deg);
+						transition: all 0.5s ease;
+					}
+					.hamburgerLineTwo {
+						opacity: 0;
+						transition: all 0.2s ease;
+					}
+					.hamburgerLineThree {
+						transform: translateY(-10px) rotate(-45deg);
+						transition: all 0.5s ease;
+					}
 				}
 			}
 		}
-		nav {
-			display: none;
-			&.showing {
-				display: block;
-				max-height: 1000px;
-				transition: 0.5s ease;
-			}
-			@include bp-med {
+		.content {
+			width: 100%;
+			opacity: 0;
+			height: 100vh;
+			display: block;
+			position: absolute;
+			right: 100%;
+			transition: 0.5s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.flex {
 				display: flex;
+				height: 50%;
+				flex-direction: column;
+				justify-content: center;
+				.navigation {
+					padding-left: 0px;
+					text-align: center;
+					font-size: 30px;
+					font-weight: bold;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 100%;
+					ul {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-content: center;
+						height: 100%;
+
+						a {
+							color: white;
+							text-decoration: none;
+							position: relative;
+							display: inline-block;
+							overflow: hidden;
+							transition: all 0.2s;
+							&:before {
+								content: '';
+								overflow: hidden;
+								width: 100%;
+								position: absolute;
+								left: -150%;
+								bottom: 0px;
+								height: 3px;
+								background-color: red;
+								transition: all 0.3s;
+							}
+							&:hover {
+								color: red;
+								&:before {
+									left: 0px;
+								}
+							}
+						}
+					}
+				}
+				&.showing {
+					right: 0px;
+					opacity: 1;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
 			}
 		}
 		.logo {
@@ -125,7 +194,7 @@
 				ul {
 					display: flex;
 					justify-content: space-around;
-					width: 45%;
+					min-width: 45%;
 
 					margin: 1% 5%;
 					li {
@@ -337,7 +406,7 @@
 	.about {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
+		justify-content: space-between;
 		align-items: center;
 		background-color: #050505;
 		color: #a3a3a3;
@@ -354,20 +423,20 @@
 			justify-content: center;
 			align-items: center;
 			img {
-				width: 300px;
-				position: absolute;
-				padding-bottom: 4%;
-				margin-left: 6%;
+				width: 200px;
+				@include bp-med {
+					width: 230px;
+				}
 			}
 		}
 		p {
 			text-align: center;
-			width: 95%;
-			font-size: 1rem;
+			width: 85%;
+			font-size: 1.2rem;
 			margin-bottom: 6%;
 			z-index: 1;
 			@include bp-med {
-				font-size: 1.8rem;
+				font-size: 1.5rem;
 			}
 		}
 		.light-spot {
@@ -383,6 +452,13 @@
 }
 footer {
 	background-color: #050505;
+	@include bp-med {
+		display: flex;
+
+		align-items: center;
+		justify-content: space-around;
+		padding: 2%;
+	}
 	.legal {
 		color: #a3a3a3;
 		display: flex;
@@ -393,6 +469,17 @@ footer {
 		margin: 0 auto;
 		height: 60px;
 		width: 60%;
+		@include bp-med {
+			color: #a3a3a3;
+			display: flex;
+			flex-direction: column;
+			justify-content: normal;
+			align-content: normal;
+			align-items: normal;
+			margin: 0 0;
+			height: 60px;
+			width: 60%;
+		}
 	}
 	.socials {
 		display: flex;

@@ -187,6 +187,7 @@ p {
 	transition: all 0.3s ease;
 	margin-right: 5%;
 	margin-top: 2%;
+	z-index: 9999;
 }
 
 @media screen and (min-width: 768px) {
@@ -224,8 +225,7 @@ p {
 }
 
 .hero.mobile .psudo-header .hamburger:hover .hamburgerLineOne {
-	-ms-transform: translateY(10px) rotate(45deg);
-	    transform: translateY(10px) rotate(45deg);
+	transform: translateY(10px) rotate(45deg);
 	transition: all 0.5s ease;
 }
 
@@ -235,31 +235,104 @@ p {
 }
 
 .hero.mobile .psudo-header .hamburger:hover .hamburgerLineThree {
-	-ms-transform: translateY(-10px) rotate(-45deg);
-	    transform: translateY(-10px) rotate(-45deg);
+	transform: translateY(-10px) rotate(-45deg);
 	transition: all 0.5s ease;
 }
 
-.hero.mobile .psudo-header .hamburger.showing {
+.hero.mobile .psudo-header .hamburger.focus {
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+
+.hero.mobile .psudo-header .hamburger.focus .hamburgerLineOne {
+	transform: translateY(10px) rotate(45deg);
+	transition: all 0.5s ease;
+}
+
+.hero.mobile .psudo-header .hamburger.focus .hamburgerLineTwo {
+	opacity: 0;
+	transition: all 0.2s ease;
+}
+
+.hero.mobile .psudo-header .hamburger.focus .hamburgerLineThree {
+	transform: translateY(-10px) rotate(-45deg);
+	transition: all 0.5s ease;
+}
+
+.hero.mobile .content {
+	width: 100%;
+	opacity: 0;
+	height: 100vh;
 	display: block;
-	max-height: 1000px;
-	transition: 0.5s ease;
+	position: absolute;
+	right: 100%;
+	transition: 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.hero.mobile nav {
-	display: none;
+.hero.mobile .content .flex {
+	display: flex;
+	height: 50%;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.hero.mobile nav.showing {
-	display: block;
-	max-height: 1000px;
-	transition: 0.5s ease;
+.hero.mobile .content .flex .navigation {
+	padding-left: 0px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
 }
 
-@media screen and (min-width: 768px) {
-	.hero.mobile nav {
-		display: flex;
-	}
+.hero.mobile .content .flex .navigation ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+	height: 100%;
+}
+
+.hero.mobile .content .flex .navigation ul a {
+	color: white;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	transition: all 0.2s;
+}
+
+.hero.mobile .content .flex .navigation ul a:before {
+	content: '';
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+	left: -150%;
+	bottom: 0px;
+	height: 3px;
+	background-color: red;
+	transition: all 0.3s;
+}
+
+.hero.mobile .content .flex .navigation ul a:hover {
+	color: red;
+}
+
+.hero.mobile .content .flex .navigation ul a:hover:before {
+	left: 0px;
+}
+
+.hero.mobile .content .flex.showing {
+	right: 0px;
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .hero.mobile .logo {
@@ -300,7 +373,7 @@ p {
 	.hero.desktop nav ul {
 		display: flex;
 		justify-content: space-around;
-		width: 45%;
+		min-width: 45%;
 		margin: 1% 5%;
 	}
 	.hero.desktop nav ul li {
@@ -355,8 +428,7 @@ p {
 }
 
 .second-section .about .idea-bulb {
-	-ms-transform: rotate(180deg);
-	    transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 .second-section .about .idea-bulb img {
@@ -581,7 +653,7 @@ p {
 .fifth-section .about {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
 	background-color: #050505;
 	color: #a3a3a3;
@@ -604,23 +676,26 @@ p {
 }
 
 .fifth-section .about .desk-light img {
-	width: 300px;
-	position: absolute;
-	padding-bottom: 4%;
-	margin-left: 6%;
+	width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+	.fifth-section .about .desk-light img {
+		width: 230px;
+	}
 }
 
 .fifth-section .about p {
 	text-align: center;
-	width: 95%;
-	font-size: 1rem;
+	width: 85%;
+	font-size: 1.2rem;
 	margin-bottom: 6%;
 	z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
 	.fifth-section .about p {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -642,6 +717,15 @@ footer {
 	background-color: #050505;
 }
 
+@media screen and (min-width: 768px) {
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding: 2%;
+	}
+}
+
 footer .legal {
 	color: #a3a3a3;
 	display: flex;
@@ -652,6 +736,20 @@ footer .legal {
 	margin: 0 auto;
 	height: 60px;
 	width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+	footer .legal {
+		color: #a3a3a3;
+		display: flex;
+		flex-direction: column;
+		justify-content: normal;
+		align-content: normal;
+		align-items: normal;
+		margin: 0 0;
+		height: 60px;
+		width: 60%;
+	}
 }
 
 footer .socials {
