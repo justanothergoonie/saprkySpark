@@ -107,56 +107,57 @@
 				height: 50%;
 				flex-direction: column;
 				justify-content: center;
-				.navigation {
-					padding-left: 0px;
-					text-align: center;
-					font-size: 30px;
-					font-weight: bold;
+			}
+			.navigation {
+				padding-left: 0px;
+				text-align: center;
+				font-size: 30px;
+				font-weight: bold;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				height: 100%;
+				ul {
 					display: flex;
 					flex-direction: column;
-					justify-content: center;
+					justify-content: space-between;
+					align-content: center;
 					height: 100%;
-					ul {
-						display: flex;
-						flex-direction: column;
-						justify-content: space-between;
-						align-content: center;
-						height: 100%;
 
-						a {
-							color: white;
-							text-decoration: none;
-							position: relative;
-							display: inline-block;
+					a {
+						color: white;
+						text-decoration: none;
+						position: relative;
+						display: inline-block;
+						overflow: hidden;
+						transition: all 0.2s;
+						&:before {
+							content: '';
 							overflow: hidden;
-							transition: all 0.2s;
+							width: 100%;
+							position: absolute;
+							left: -150%;
+							bottom: 0px;
+							height: 3px;
+							background-color: red;
+							transition: all 0.3s;
+						}
+						&:hover {
+							color: red;
 							&:before {
-								content: '';
-								overflow: hidden;
-								width: 100%;
-								position: absolute;
-								left: -150%;
-								bottom: 0px;
-								height: 3px;
-								background-color: red;
-								transition: all 0.3s;
-							}
-							&:hover {
-								color: red;
-								&:before {
-									left: 0px;
-								}
+								left: 0px;
 							}
 						}
 					}
 				}
-				&.showing {
-					right: 0px;
-					opacity: 1;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
+			}
+			&.showing {
+				right: 0px;
+				opacity: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgba(255, 255, 255, 0.5);
 			}
 		}
 		.logo {
@@ -212,7 +213,18 @@
 		}
 	}
 }
-
+.svg-container {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	svg {
+		position: absolute;
+		height: 100%;
+	}
+}
 .second-section {
 	@include bp-med {
 		display: flex;
@@ -253,15 +265,19 @@
 		p {
 			text-align: center;
 			width: 70%;
+			line-height: 1.8rem;
 			font-size: 1.1rem;
 			@include bp-med {
 				font-size: 1.8rem;
+				line-height: 3rem;
+				text-align: right;
 			}
 		}
 		.light-spot {
 			margin-bottom: 5%;
 			img {
 				width: 400px;
+				opacity: 0.4;
 				@include bp-med {
 					width: 550px;
 				}
@@ -310,14 +326,18 @@
 			text-align: center;
 			width: 70%;
 			font-size: 1.1rem;
+			line-height: 1.8rem;
 			@include bp-med {
 				font-size: 1.8rem;
+				line-height: 3rem;
+				text-align: left;
 			}
 		}
 		.light-spot {
 			margin-bottom: 5%;
 			img {
 				width: 400px;
+				opacity: 0.4;
 				@include bp-med {
 					width: 550px;
 				}
@@ -371,15 +391,19 @@
 		p {
 			text-align: center;
 			width: 92.5%;
+			line-height: 1.8rem;
 			font-size: 1.1rem;
 			@include bp-med {
 				font-size: 1.8rem;
+				line-height: 3rem;
+				text-align: right;
 			}
 		}
 		.light-spot {
 			margin-bottom: 5%;
 			img {
 				width: 400px;
+				opacity: 0.4;
 				@include bp-med {
 					width: 550px;
 				}
@@ -412,10 +436,12 @@
 		color: #a3a3a3;
 		height: 50vh;
 		overflow: hidden;
+		padding-bottom: 4rem;
 
 		@include bp-med {
 			height: 100vh;
 			width: 50vw;
+			padding-bottom: 0rem;
 		}
 		.desk-light {
 			z-index: 0;
@@ -434,15 +460,19 @@
 			width: 85%;
 			font-size: 1.2rem;
 			margin-bottom: 6%;
+			line-height: 1.8rem;
 			z-index: 1;
 			@include bp-med {
 				font-size: 1.5rem;
+				line-height: 3rem;
+				text-align: left;
 			}
 		}
 		.light-spot {
 			margin-bottom: 5%;
 			img {
 				width: 400px;
+				opacity: 0.4;
 				@include bp-med {
 					width: 550px;
 				}
@@ -452,10 +482,12 @@
 }
 footer {
 	background-color: #050505;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	@include bp-med {
-		display: flex;
-
-		align-items: center;
+		flex-direction: row;
 		justify-content: space-around;
 		padding: 2%;
 	}
@@ -464,11 +496,15 @@ footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-content: center;
 		align-items: center;
-		margin: 0 auto;
-		height: 60px;
-		width: 60%;
+		line-height: 1.5;
+		width: 100%;
+		span {
+			text-align: center;
+			@include bp-med {
+				text-align: left;
+			}
+		}
 		@include bp-med {
 			color: #a3a3a3;
 			display: flex;
@@ -483,8 +519,9 @@ footer {
 	}
 	.socials {
 		display: flex;
+		/* padding: 1rem; */
+		width: 70%;
 		justify-content: space-evenly;
-
 		a {
 			padding: 5%;
 			img {

@@ -140,7 +140,7 @@ body {
 }
 
 p {
-	text-shadow: -2px 10px 12px rgba(163, 163, 163, 0.69);
+	text-shadow: -2px 10px 11px #3d3020;
 }
 
 .hero {
@@ -279,7 +279,7 @@ p {
 	justify-content: center;
 }
 
-.hero.mobile .content .flex .navigation {
+.hero.mobile .content .navigation {
 	padding-left: 0px;
 	text-align: center;
 	font-size: 30px;
@@ -290,7 +290,7 @@ p {
 	height: 100%;
 }
 
-.hero.mobile .content .flex .navigation ul {
+.hero.mobile .content .navigation ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -298,7 +298,7 @@ p {
 	height: 100%;
 }
 
-.hero.mobile .content .flex .navigation ul a {
+.hero.mobile .content .navigation ul a {
 	color: white;
 	text-decoration: none;
 	position: relative;
@@ -307,7 +307,7 @@ p {
 	transition: all 0.2s;
 }
 
-.hero.mobile .content .flex .navigation ul a:before {
+.hero.mobile .content .navigation ul a:before {
 	content: '';
 	overflow: hidden;
 	width: 100%;
@@ -319,20 +319,21 @@ p {
 	transition: all 0.3s;
 }
 
-.hero.mobile .content .flex .navigation ul a:hover {
+.hero.mobile .content .navigation ul a:hover {
 	color: red;
 }
 
-.hero.mobile .content .flex .navigation ul a:hover:before {
+.hero.mobile .content .navigation ul a:hover:before {
 	left: 0px;
 }
 
-.hero.mobile .content .flex.showing {
+.hero.mobile .content.showing {
 	right: 0px;
 	opacity: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 .hero.mobile .logo {
@@ -386,6 +387,20 @@ p {
 	.hero.desktop nav ul li a.active {
 		border-bottom: 2px solid white;
 	}
+}
+
+.svg-container {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+}
+
+.svg-container svg {
+	position: absolute;
+	height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -444,12 +459,15 @@ p {
 .second-section .about p {
 	text-align: center;
 	width: 70%;
+	line-height: 1.8rem;
 	font-size: 1.1rem;
 }
 
 @media screen and (min-width: 768px) {
 	.second-section .about p {
 		font-size: 1.8rem;
+		line-height: 3rem;
+		text-align: right;
 	}
 }
 
@@ -459,6 +477,7 @@ p {
 
 .second-section .about .light-spot img {
 	width: 400px;
+	opacity: 0.4;
 }
 
 @media screen and (min-width: 768px) {
@@ -521,11 +540,14 @@ p {
 	text-align: center;
 	width: 70%;
 	font-size: 1.1rem;
+	line-height: 1.8rem;
 }
 
 @media screen and (min-width: 768px) {
 	.third-section .about p {
 		font-size: 1.8rem;
+		line-height: 3rem;
+		text-align: left;
 	}
 }
 
@@ -535,6 +557,7 @@ p {
 
 .third-section .about .light-spot img {
 	width: 400px;
+	opacity: 0.4;
 }
 
 @media screen and (min-width: 768px) {
@@ -605,12 +628,15 @@ p {
 .fourth-section .about p {
 	text-align: center;
 	width: 92.5%;
+	line-height: 1.8rem;
 	font-size: 1.1rem;
 }
 
 @media screen and (min-width: 768px) {
 	.fourth-section .about p {
 		font-size: 1.8rem;
+		line-height: 3rem;
+		text-align: right;
 	}
 }
 
@@ -620,6 +646,7 @@ p {
 
 .fourth-section .about .light-spot img {
 	width: 400px;
+	opacity: 0.4;
 }
 
 @media screen and (min-width: 768px) {
@@ -659,12 +686,14 @@ p {
 	color: #a3a3a3;
 	height: 50vh;
 	overflow: hidden;
+	padding-bottom: 4rem;
 }
 
 @media screen and (min-width: 768px) {
 	.fifth-section .about {
 		height: 100vh;
 		width: 50vw;
+		padding-bottom: 0rem;
 	}
 }
 
@@ -690,12 +719,15 @@ p {
 	width: 85%;
 	font-size: 1.2rem;
 	margin-bottom: 6%;
+	line-height: 1.8rem;
 	z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
 	.fifth-section .about p {
 		font-size: 1.5rem;
+		line-height: 3rem;
+		text-align: left;
 	}
 }
 
@@ -705,6 +737,7 @@ p {
 
 .fifth-section .about .light-spot img {
 	width: 400px;
+	opacity: 0.4;
 }
 
 @media screen and (min-width: 768px) {
@@ -715,12 +748,15 @@ p {
 
 footer {
 	background-color: #050505;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 @media screen and (min-width: 768px) {
 	footer {
-		display: flex;
-		align-items: center;
+		flex-direction: row;
 		justify-content: space-around;
 		padding: 2%;
 	}
@@ -731,11 +767,19 @@ footer .legal {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-content: center;
 	align-items: center;
-	margin: 0 auto;
-	height: 60px;
-	width: 60%;
+	line-height: 1.5;
+	width: 100%;
+}
+
+footer .legal span {
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	footer .legal span {
+		text-align: left;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -754,6 +798,8 @@ footer .legal {
 
 footer .socials {
 	display: flex;
+	/* padding: 1rem; */
+	width: 70%;
 	justify-content: space-evenly;
 }
 
