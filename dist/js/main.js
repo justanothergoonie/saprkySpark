@@ -1,6 +1,5 @@
 "use strict";
 
-console.log("Hello World from main.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files.");
 var hamburgerButton = document.querySelector('.hamburger');
 var navList = document.querySelector('.content');
 
@@ -10,11 +9,19 @@ var toggleNav = function toggleNav() {
 };
 
 hamburgerButton.addEventListener('click', toggleNav);
+
+window.onload = function () {
+  var logo = document.querySelector('#logo');
+  logo.classList.add('active');
+};
+
 var waypoint = new Waypoint({
   element: document.getElementById('logo'),
   handler: function handler() {
-    var logo = document.getElementById('logo');
+    var logo = document.getElementById('#ogo');
     logo.classList.add('active');
-  }
+    console.log('hello world');
+  },
+  offset: 'bottom-in-view'
 });
 //# sourceMappingURL=main.js.map
