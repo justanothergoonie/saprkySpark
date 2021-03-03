@@ -10,3 +10,11 @@ let toggleNav = function () {
 	hamburgerButton.classList.toggle('focus');
 };
 hamburgerButton.addEventListener('click', toggleNav);
+
+var waypoint = new Waypoint({
+	element: document.getElementById('logo'),
+	handler: function () {
+		let logo = document.getElementById('logo');
+		logo.classList.add('active');
+	},
+});
