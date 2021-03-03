@@ -1,6 +1,3 @@
-console.log(`Hello World from main.js! 
-Change this message, and make sure it changes in the browser 
-to verify that you're working in the right files.`);
 let hamburgerButton = document.querySelector('.hamburger');
 
 let navList = document.querySelector('.content');
@@ -11,10 +8,17 @@ let toggleNav = function () {
 };
 hamburgerButton.addEventListener('click', toggleNav);
 
+window.onload = function () {
+	let logo = document.querySelector('#logo');
+	logo.classList.add('active');
+};
+
 var waypoint = new Waypoint({
 	element: document.getElementById('logo'),
 	handler: function () {
-		let logo = document.getElementById('logo');
+		let logo = document.getElementById('#ogo');
 		logo.classList.add('active');
+		console.log('hello world');
 	},
+	offset: 'bottom-in-view',
 });
