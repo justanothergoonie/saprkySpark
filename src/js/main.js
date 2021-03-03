@@ -16,7 +16,7 @@ window.onload = function () {
 var waypoint = new Waypoint({
 	element: document.getElementById('logo'),
 	handler: function () {
-		let logo = document.getElementById('#ogo');
+		let logo = document.getElementById('logo');
 		logo.classList.add('active');
 		console.log('hello world');
 	},
