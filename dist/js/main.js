@@ -10,4 +10,11 @@ var toggleNav = function toggleNav() {
 };
 
 hamburgerButton.addEventListener('click', toggleNav);
+var waypoint = new Waypoint({
+  element: document.getElementById('logo'),
+  handler: function handler() {
+    var logo = document.getElementById('logo');
+    logo.classList.add('active');
+  }
+});
 //# sourceMappingURL=main.js.map
