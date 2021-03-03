@@ -24,4 +24,13 @@ var waypoint = new Waypoint({
   },
   offset: 'bottom-in-view'
 });
+var waypoint1 = new Waypoint({
+  element: document.getElementById('logo1'),
+  handler: function handler() {
+    var logo = document.getElementById('logo1');
+    logo.classList.add('active');
+    console.log('hello world');
+  },
+  offset: 'bottom-in-view'
+});
 //# sourceMappingURL=main.js.map
