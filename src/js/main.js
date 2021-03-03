@@ -12,7 +12,6 @@ window.onload = function () {
 	let logo = document.querySelector('#logo');
 	logo.classList.add('active');
 };
-
 var waypoint = new Waypoint({
 	element: document.getElementById('logo'),
 	handler: function () {
