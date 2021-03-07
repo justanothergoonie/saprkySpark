@@ -132,18 +132,27 @@
 						overflow: hidden;
 						transition: all 0.2s;
 						&:before {
-							content: '';
+							@include bp-med{
+									content: '';
 							overflow: hidden;
 							width: 100%;
 							position: absolute;
 							left: -150%;
 							bottom: 0px;
 							height: 3px;
-							background-color: red;
+							background-color: rgb(170, 132, 9);
 							transition: all 0.3s;
+							}
+						
 						}
 						&:hover {
-							color: red;
+							color: rgb(2, 2, 2);
+							background-color: rgb(253, 211, 133);
+							box-shadow:
+							0 0 41px 26px rgb(247, 209, 139),  /* inner white */
+							0 0 39px 23px rgb(255, 166, 0), /* middle magenta */
+							0 0 60px 7px rgb(255, 217, 0); /* outer cyan */
+							
 							&:before {
 								left: 0px;
 							}
@@ -157,7 +166,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				background-color: rgba(255, 255, 255, 0.5);
+				background-color: rgba(12, 12, 12, 0.9);
 			}
 		}
 		#logo {
@@ -212,280 +221,321 @@
 		}
 	}
 }
-.svg-container {
-	height: 100vh;
-	width: 100vw;
-	position: absolute;
-	z-index: 1000;
-	display: flex;
-	justify-content: center;
-	svg {
+main{
+	&::before{
+		background-image: url(/dist/img/WaveLine.svg);
+		height: 100px;
+	}
+	.svg-container {
+		height: 100vh;
+		width: 100vw;
 		position: absolute;
-		height: 100%;
-	}
-}
-.second-section {
-	@include bp-med {
+		z-index: 1000;
 		display: flex;
+		justify-content: center;
+		svg {
+			position: absolute;
+			height: 100%;
+		}
 	}
-	.second-section-picture {
-		background-image: url(/dist/img/o-INDIA-NO-ELECTRICITY-VILLAGE-facebook_compressed.jpg);
-		height: 50vh;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: bottom;
+	.second-section {
 		@include bp-med {
-			height: 100vh;
-			width: 50vw;
-		}
-	}
-	.about {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		background-color: #050505;
-		color: #a3a3a3;
-		height: 50vh;
-		overflow: hidden;
-		@include bp-med {
-			height: 100vh;
-			width: 50vw;
-		}
-		.idea-bulb {
-			transform: rotate(180deg);
-			svg {
-				width: 150px;
-				height: 100%;
-				@include bp-med {
-					width: 230px;
-					height: 100%;
-				}
-			}
-		}
-		p {
-			text-align: center;
-			width: 70%;
-			line-height: 1.8rem;
-			font-size: 1.1rem;
-			@include bp-med {
-				font-size: 1.8rem;
-				line-height: 3rem;
-				text-align: right;
-			}
-		}
-		.light-spot {
-			margin-bottom: 5%;
-			img {
-				width: 400px;
-				opacity: 0.4;
-				@include bp-med {
-					width: 550px;
-				}
-			}
-		}
-	}
-}
-.third-section {
-	@include bp-med {
-		display: flex;
-		flex-direction: row-reverse;
-	}
-	.third-section-picture {
-		background-image: url(/dist/img/1_uD-8jrFwssqXbGAvImPj_Q.jpeg);
-		height: 50vh;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: bottom;
-		@include bp-med {
-			height: 100vh;
-			width: 50vw;
-		}
-	}
-	.about {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		background-color: #050505;
-		color: #a3a3a3;
-		height: 50vh;
-		overflow: hidden;
-		@include bp-med {
-			height: 100vh;
-			width: 50vw;
-		}
-		.ceiling-lamp {
-			svg {
-				width: 150px;
-				height: 100%;
-				@include bp-med {
-					width: 230px;
-					height: 100%;
-				}
-			}
-		}
-		p {
-			text-align: center;
-			width: 70%;
-			font-size: 1.1rem;
-			line-height: 1.8rem;
-			@include bp-med {
-				font-size: 1.8rem;
-				line-height: 3rem;
-				text-align: left;
-			}
-		}
-		.light-spot {
-			margin-bottom: 5%;
-			img {
-				width: 400px;
-				opacity: 0.4;
-				@include bp-med {
-					width: 550px;
-				}
-			}
-		}
-	}
-}
-.fourth-section {
-	@include bp-med {
-		display: flex;
-	}
-	.fourth-section-picture {
-		background-image: url(/dist/img/1541578076606.jpeg);
-		height: 50vh;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: bottom;
-		@include bp-med {
-			height: 100vh;
-			width: 50vw;
-		}
-	}
-	.about {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		background-color: #050505;
-		color: #a3a3a3;
-		height: 50vh;
-		overflow: hidden;
-		@include bp-med {
-			height: 100vh;
-			width: 50vw;
-		}
-		.stage-lights {
 			display: flex;
-			width: 100%;
+		}
+		.second-section-picture {
+			background-image: url(/dist/img/o-INDIA-NO-ELECTRICITY-VILLAGE-facebook_compressed.jpg);
+			background-color: #050505;
+			height: 50vh;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			@include bp-med {
+				height: 100vh;
+				width: 50vw;
+				background-image: url(/dist/img/picOne.png);
+				background-color: #050505;
+				background-size: contain;
+			}
+		}
+		.about {
+			display: flex;
+			flex-direction: column;
 			justify-content: space-between;
-			svg {
-				width: 150px;
-				height: 100%;
-				margin: 0 2%;
+			align-items: center;
+			background-color: #050505;
+			color: #a3a3a3;
+			height: 50vh;
+			// width: 40%;
+			overflow: hidden;
+			@include bp-med {
+				height: 100vh;
+				width: 50vw;
+			}
+			.idea-bulb {
+				transform: rotate(180deg);
+				svg {
+					width: 150px;
+					height: 100%;
+					@include bp-med {
+						width: 230px;
+						height: 100%;
+					}
+				}
+			}
+			p {
+				text-align: center;
+				width: 70%;
+				line-height: 1.8rem;
+				font-size: 1.1rem;
+				
+				
+				&:hover{
+					text-shadow: -2px 3px 21px #f8f409;;
+				}
+
+
+
 				@include bp-med {
-					width: 230px;
-					&:last-child {
-						display: none;
+					font-size: 1.8rem;
+					line-height: 3rem;
+					text-align: right;
+				}
+			}
+			.light-spot {
+				margin-bottom: 5%;
+				img {
+					width: 400px;
+					opacity: 0.4;
+					@include bp-med {
+						width: 550px;
 					}
 				}
 			}
 		}
-		p {
-			text-align: center;
-			width: 92.5%;
-			line-height: 1.8rem;
-			font-size: 1.1rem;
-			@include bp-med {
-				font-size: 1.8rem;
-				line-height: 3rem;
-				text-align: right;
-			}
-		}
-		.light-spot {
-			margin-bottom: 5%;
-			img {
-				width: 400px;
-				opacity: 0.4;
-				@include bp-med {
-					width: 550px;
-				}
-			}
-		}
 	}
-}
-.fifth-section {
-	@include bp-med {
-		display: flex;
-		flex-direction: row-reverse;
-	}
-	.fifth-section-picture {
-		background-image: url(/dist/img/4058016965_db02c42403_b.jpg);
-		height: 50vh;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: bottom;
+	.third-section {
 		@include bp-med {
-			height: 100vh;
-			width: 50vw;
-		}
-	}
-	.about {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		background-color: #050505;
-		color: #a3a3a3;
-		height: 50vh;
-		overflow: hidden;
-		padding-bottom: 4rem;
-
-		@include bp-med {
-			height: 100vh;
-			width: 50vw;
-			padding-bottom: 0rem;
-		}
-		.desk-light {
-			z-index: 0;
 			display: flex;
-			justify-content: center;
+			flex-direction: row-reverse;
+		}
+		.third-section-picture {
+			background-image: url(/dist/img/1_uD-8jrFwssqXbGAvImPj_Q.jpeg);
+			height: 50vh;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			@include bp-med {
+				height: 100vh;
+				width: 50vw;
+				background-image: url(/dist/img/picTwo.png);
+				background-color: #050505;
+				background-size: contain;
+			}
+		}
+		.about {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 			align-items: center;
-			svg {
-				width: 150px;
-				height: 100%;
-				@include bp-med {
-					width: 230px;
+			background-color: #050505;
+			color: #a3a3a3;
+			height: 50vh;
+			overflow: hidden;
+			@include bp-med {
+				height: 100vh;
+				width: 50vw;
+			}
+			.ceiling-lamp {
+				svg {
+					width: 150px;
 					height: 100%;
+					@include bp-med {
+						width: 230px;
+						height: 100%;
+					}
 				}
 			}
-		}
-		p {
-			text-align: center;
-			width: 85%;
-			font-size: 1.2rem;
-			margin-bottom: 6%;
-			line-height: 1.8rem;
-			z-index: 1;
-			@include bp-med {
-				font-size: 1.5rem;
-				line-height: 3rem;
-				text-align: left;
-			}
-		}
-		.light-spot {
-			margin-bottom: 5%;
-			img {
-				width: 400px;
-				opacity: 0.4;
+			p {
+				text-align: center;
+				width: 70%;
+				font-size: 1.1rem;
+				line-height: 1.8rem;
+				&:hover{
+					text-shadow: -2px 3px 21px #f8f409;;
+				}
 				@include bp-med {
-					width: 550px;
+					font-size: 1.8rem;
+					line-height: 3rem;
+					text-align: left;
+				}
+			}
+			.light-spot {
+				margin-bottom: 5%;
+				img {
+					width: 400px;
+					opacity: 0.4;
+					@include bp-med {
+						width: 550px;
+					}
 				}
 			}
 		}
 	}
+	.fourth-section {
+		@include bp-med {
+			display: flex;
+		}
+		.fourth-section-picture {
+			background-image: url(/dist/img/1541578076606.jpeg);
+			
+			height: 50vh;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			@include bp-med {
+				height: 100vh;
+				width: 50vw;
+				background-image: url(/dist/img/picThree.png);
+				background-color: #050505;
+				background-size: contain;
+			}
+		}
+		.about {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #050505;
+			color: #a3a3a3;
+			height: 50vh;
+			overflow: hidden;
+			@include bp-med {
+				height: 100vh;
+				width: 50vw;
+			}
+			.stage-lights {
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				svg {
+					width: 150px;
+					height: 100%;
+					margin: 0 2%;
+					@include bp-med {
+						width: 230px;
+						&:last-child {
+							display: none;
+						}
+					}
+				}
+			}
+			p {
+				text-align: center;
+				width: 92.5%;
+				line-height: 1.8rem;
+				font-size: 1.1rem;
+				&:hover{
+					text-shadow: -2px 3px 21px #f8f409;;
+				}
+				@include bp-med {
+					font-size: 1.8rem;
+					line-height: 3rem;
+					text-align: right;
+				}
+			}
+			.light-spot {
+				margin-bottom: 5%;
+				img {
+					width: 400px;
+					opacity: 0.4;
+					@include bp-med {
+						width: 550px;
+					}
+				}
+			}
+		}
+	}
+	.fifth-section {
+		@include bp-med {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		.fifth-section-picture {
+			// background-image: url(/dist/img/4058016965_db02c42403_b.jpg);
+			background-image: url(/dist/img/picFour.png);
+			background-color: #050505;
+			height: 50vh;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			@include bp-med {
+				height: 100vh;
+				width: 50vw;
+			}
+		}
+		.about {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #050505;
+			color: #a3a3a3;
+			height: 50vh;
+			overflow: hidden;
+			padding-bottom: 4rem;
+
+			@include bp-med {
+				height: 100vh;
+				width: 50vw;
+				padding-bottom: 0rem;
+			}
+			.desk-light {
+				z-index: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				svg {
+					width: 150px;
+					height: 100%;
+					@include bp-med {
+						width: 230px;
+						height: 100%;
+					}
+				}
+			}
+			p {
+				text-align: center;
+				width: 85%;
+				font-size: 1.2rem;
+				margin-bottom: 6%;
+				line-height: 1.8rem;
+				z-index: 1;
+				&:hover{
+					text-shadow: -2px 3px 21px #f8f409;;
+				}
+				@include bp-med {
+					font-size: 1.5rem;
+					line-height: 3rem;
+					text-align: left;
+				}
+			}
+			.light-spot {
+				margin-bottom: 5%;
+				img {
+					width: 400px;
+					opacity: 0.4;
+					@include bp-med {
+						width: 550px;
+					}
+				}
+			}
+		}
+	}
+
+
 }
+
+
 footer {
 	background-color: #050505;
 	padding: 5%;
@@ -528,10 +578,16 @@ footer {
 		/* padding: 1rem; */
 		width: 70%;
 		justify-content: space-evenly;
+		// &:hover{
+		// 	color: rebeccapurple;
+		// 	// transition: ease-in-out .3s;
+		// }
 		a {
 			padding: 5%;
+			
 			img {
 				width: 50px;
+				
 			}
 		}
 	}
