@@ -987,12 +987,14 @@ p {
   .hero.desktop nav ul li a.active {
     border-bottom: 2px solid white;
   }
+  .hero.desktop nav ul li a:hover {
+    background: rgba(184, 172, 109, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 42px 9px #fae364;
+    transition: ease-in-out 0.3s;
+  }
 }
 
-main::before {
-  background-image: url(/dist/img/WaveLine.svg);
-  height: 100px;
-}
 main .svg-container {
   height: 100vh;
   width: 100vw;
@@ -1020,10 +1022,10 @@ main .second-section .second-section-picture {
 }
 @media screen and (min-width: 768px) {
   main .second-section .second-section-picture {
-    height: 100vh;
+    height: 87vh;
     width: 50vw;
     background-image: url(/dist/img/picOne.png);
-    background-color: #050505;
+    background-color: black;
     background-size: contain;
   }
 }
@@ -1032,14 +1034,14 @@ main .second-section .about {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #050505;
+  background-color: black;
   color: #a3a3a3;
   height: 50vh;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   main .second-section .about {
-    height: 100vh;
+    height: 87vh;
     width: 50vw;
   }
 }
@@ -1100,10 +1102,10 @@ main .third-section .third-section-picture {
 }
 @media screen and (min-width: 768px) {
   main .third-section .third-section-picture {
-    height: 100vh;
+    height: 87vh;
     width: 50vw;
     background-image: url(/dist/img/picTwo.png);
-    background-color: #050505;
+    background-color: black;
     background-size: contain;
   }
 }
@@ -1112,14 +1114,14 @@ main .third-section .about {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #050505;
+  background-color: black;
   color: #a3a3a3;
   height: 50vh;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   main .third-section .about {
-    height: 100vh;
+    height: 87vh;
     width: 50vw;
   }
 }
@@ -1175,10 +1177,10 @@ main .fourth-section .fourth-section-picture {
 }
 @media screen and (min-width: 768px) {
   main .fourth-section .fourth-section-picture {
-    height: 100vh;
+    height: 87vh;
     width: 50vw;
     background-image: url(/dist/img/picThree.png);
-    background-color: #050505;
+    background-color: black;
     background-size: contain;
   }
 }
@@ -1187,14 +1189,14 @@ main .fourth-section .about {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #050505;
+  background-color: black;
   color: #a3a3a3;
   height: 50vh;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   main .fourth-section .about {
-    height: 100vh;
+    height: 87vh;
     width: 50vw;
   }
 }
@@ -1252,7 +1254,7 @@ main .fourth-section .about .light-spot img {
 }
 main .fifth-section .fifth-section-picture {
   background-image: url(/dist/img/picFour.png);
-  background-color: #050505;
+  background-color: black;
   height: 50vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1260,7 +1262,7 @@ main .fifth-section .fifth-section-picture {
 }
 @media screen and (min-width: 768px) {
   main .fifth-section .fifth-section-picture {
-    height: 100vh;
+    height: 87vh;
     width: 50vw;
   }
 }
@@ -1269,7 +1271,7 @@ main .fifth-section .about {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #050505;
+  background-color: black;
   color: #a3a3a3;
   height: 50vh;
   overflow: hidden;
@@ -1277,7 +1279,7 @@ main .fifth-section .about {
 }
 @media screen and (min-width: 768px) {
   main .fifth-section .about {
-    height: 100vh;
+    height: 87vh;
     width: 50vw;
     padding-bottom: 0rem;
   }
@@ -1379,10 +1381,20 @@ footer .socials {
   width: 70%;
   justify-content: space-evenly;
 }
-footer .socials a {
-  padding: 5%;
+footer .socials a i {
+  font-size: 30px;
+  color: white;
+  margin-top: 15px;
 }
-footer .socials a img {
-  width: 50px;
+@media screen and (min-width: 768px) {
+  footer .socials a i {
+    margin-top: 0;
+  }
+}
+footer .socials a i:hover {
+  color: #fae364;
+  transition: ease-in-out 0.3s;
+  -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
 }
 /*# sourceMappingURL=main.css.map */
