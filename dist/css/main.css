@@ -973,51 +973,52 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-	.hero.desktop {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-	.hero.desktop .psudo-header {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: flex-end;
-		align-items: center;
-		margin: 3% 10%;
-	}
-	.hero.desktop .psudo-header .logo {
-		width: 150px;
-	}
-	.hero.desktop .psudo-header h1 {
-		font-size: 2rem;
-		margin-left: 3%;
-	}
-	.hero.desktop nav {
-		display: flex;
-		justify-content: flex-end;
-		font-size: 1.7rem;
-	}
-	.hero.desktop nav ul {
-		display: flex;
-		justify-content: space-around;
-		min-width: 45%;
-		margin: 1% 5%;
-	}
-	.hero.desktop nav ul li {
-		margin: 1%;
-	}
-	.hero.desktop nav ul li a {
-		color: white;
-		text-decoration: none;
-	}
-	.hero.desktop nav ul li a.active {
-		border-bottom: 2px solid white;
-	}
-}
-
-main::before {
-	background-image: url(/dist/img/WaveLine.svg);
-	height: 100px;
+  .hero.desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero.desktop .psudo-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 3% 10%;
+  }
+  .hero.desktop .psudo-header .logo {
+    width: 150px;
+  }
+  .hero.desktop .psudo-header h1 {
+    font-size: 2rem;
+    margin-left: 3%;
+  }
+  .hero.desktop nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.7rem;
+  }
+  .hero.desktop nav ul {
+    display: flex;
+    justify-content: space-around;
+    min-width: 45%;
+    margin: 1% 5%;
+  }
+  .hero.desktop nav ul li {
+    margin: 1%;
+  }
+  .hero.desktop nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .hero.desktop nav ul li a.active {
+    border-bottom: 2px solid white;
+  }
+  .hero.desktop nav ul li a:hover {
+    background: rgba(184, 172, 109, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 42px 9px #fae364;
+    transition: ease-in-out 0.3s;
+  }
 }
 
 main .svg-container {
@@ -1050,31 +1051,31 @@ main .second-section .second-section-picture {
 }
 
 @media screen and (min-width: 768px) {
-	main .second-section .second-section-picture {
-		height: 100vh;
-		width: 50vw;
-		background-image: url(/dist/img/picOne.png);
-		background-color: #050505;
-		background-size: contain;
-	}
+  main .second-section .second-section-picture {
+    height: 87vh;
+    width: 50vw;
+    background-image: url(/dist/img/picOne.png);
+    background-color: black;
+    background-size: contain;
+  }
 }
 
 main .second-section .about {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #050505;
-	color: #a3a3a3;
-	height: 50vh;
-	overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #a3a3a3;
+  height: 50vh;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-	main .second-section .about {
-		height: 100vh;
-		width: 50vw;
-	}
+  main .second-section .about {
+    height: 87vh;
+    width: 50vw;
+  }
 }
 
 main .second-section .about .idea-bulb {
@@ -1143,31 +1144,31 @@ main .third-section .third-section-picture {
 }
 
 @media screen and (min-width: 768px) {
-	main .third-section .third-section-picture {
-		height: 100vh;
-		width: 50vw;
-		background-image: url(/dist/img/picTwo.png);
-		background-color: #050505;
-		background-size: contain;
-	}
+  main .third-section .third-section-picture {
+    height: 87vh;
+    width: 50vw;
+    background-image: url(/dist/img/picTwo.png);
+    background-color: black;
+    background-size: contain;
+  }
 }
 
 main .third-section .about {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #050505;
-	color: #a3a3a3;
-	height: 50vh;
-	overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #a3a3a3;
+  height: 50vh;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-	main .third-section .about {
-		height: 100vh;
-		width: 50vw;
-	}
+  main .third-section .about {
+    height: 87vh;
+    width: 50vw;
+  }
 }
 
 main .third-section .about .ceiling-lamp svg {
@@ -1231,31 +1232,31 @@ main .fourth-section .fourth-section-picture {
 }
 
 @media screen and (min-width: 768px) {
-	main .fourth-section .fourth-section-picture {
-		height: 100vh;
-		width: 50vw;
-		background-image: url(/dist/img/picThree.png);
-		background-color: #050505;
-		background-size: contain;
-	}
+  main .fourth-section .fourth-section-picture {
+    height: 87vh;
+    width: 50vw;
+    background-image: url(/dist/img/picThree.png);
+    background-color: black;
+    background-size: contain;
+  }
 }
 
 main .fourth-section .about {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #050505;
-	color: #a3a3a3;
-	height: 50vh;
-	overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #a3a3a3;
+  height: 50vh;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-	main .fourth-section .about {
-		height: 100vh;
-		width: 50vw;
-	}
+  main .fourth-section .about {
+    height: 87vh;
+    width: 50vw;
+  }
 }
 
 main .fourth-section .about .stage-lights {
@@ -1321,39 +1322,39 @@ main .fourth-section .about .light-spot img {
 }
 
 main .fifth-section .fifth-section-picture {
-	background-image: url(/dist/img/picFour.png);
-	background-color: #050505;
-	height: 50vh;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: bottom;
+  background-image: url(/dist/img/picFour.png);
+  background-color: black;
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 @media screen and (min-width: 768px) {
-	main .fifth-section .fifth-section-picture {
-		height: 100vh;
-		width: 50vw;
-	}
+  main .fifth-section .fifth-section-picture {
+    height: 87vh;
+    width: 50vw;
+  }
 }
 
 main .fifth-section .about {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #050505;
-	color: #a3a3a3;
-	height: 50vh;
-	overflow: hidden;
-	padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #a3a3a3;
+  height: 50vh;
+  overflow: hidden;
+  padding-bottom: 4rem;
 }
 
 @media screen and (min-width: 768px) {
-	main .fifth-section .about {
-		height: 100vh;
-		width: 50vw;
-		padding-bottom: 0rem;
-	}
+  main .fifth-section .about {
+    height: 87vh;
+    width: 50vw;
+    padding-bottom: 0rem;
+  }
 }
 
 main .fifth-section .about .desk-light {
@@ -1467,13 +1468,21 @@ footer .socials {
 	width: 70%;
 	justify-content: space-evenly;
 }
-
-footer .socials a {
-	padding: 5%;
+footer .socials a i {
+  font-size: 30px;
+  color: white;
+  margin-top: 15px;
 }
-
-footer .socials a img {
-	width: 50px;
+@media screen and (min-width: 768px) {
+  footer .socials a i {
+    margin-top: 0;
+  }
+}
+footer .socials a i:hover {
+  color: #fae364;
+  transition: ease-in-out 0.3s;
+  -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=main.css.map */
