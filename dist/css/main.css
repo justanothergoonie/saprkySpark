@@ -1042,7 +1042,7 @@ main .svg-container svg {
 }
 
 main .second-section .second-section-picture {
-	background-image: url(/dist/img/o-INDIA-NO-ELECTRICITY-VILLAGE-facebook_compressed.jpg);
+	background-image: url(/dist/img/opl_IMG_0452.jpeg);
 	background-color: #050505;
 	height: 50vh;
 	background-size: cover;
@@ -1054,7 +1054,7 @@ main .second-section .second-section-picture {
 	main .second-section .second-section-picture {
 		height: 87vh;
 		width: 50vw;
-		background-image: url(/dist/img/picOne.png);
+		background-image: url(/dist/img/picSeven.png);
 		background-color: black;
 		background-size: contain;
 	}
@@ -1236,7 +1236,7 @@ main .third-section .about .light-spot img {
 }
 
 main .fourth-section .fourth-section-picture {
-	background-image: url(/dist/img/1541578076606.jpeg);
+	background-image: url(/dist/img/Child-studying-using-candlelamp-as-light.jpg);
 	height: 50vh;
 	background-size: cover;
 	background-repeat: no-repeat;
