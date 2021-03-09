@@ -1463,6 +1463,10 @@ footer .legal {
 	width: 100%;
 }
 
+footer .legal:hover {
+	text-shadow: -2px 3px 21px #f8f409;
+}
+
 footer .legal span {
 	text-align: center;
 }
