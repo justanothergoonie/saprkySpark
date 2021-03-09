@@ -399,7 +399,7 @@ main {
 			display: flex;
 		}
 		.fourth-section-picture {
-			background-image: url(/dist/img/Child-studying-using-candlelamp-as-light.jpg);
+			background-image: url(/dist/img/canon-pro-pascal-maitre-full-frame-africa-1-1140.jpeg);
 
 			height: 50vh;
 			background-size: cover;
@@ -408,7 +408,7 @@ main {
 			@include bp-med {
 				height: 87vh;
 				width: 50vw;
-				background-image: url(/dist/img/picThree.png);
+				background-image: url(/dist/img/picNine.png);
 				background-color: black;
 				background-size: contain;
 			}
@@ -558,7 +558,7 @@ main {
 }
 
 footer {
-	background-color: #050505;
+	background-color: black;
 	padding: 5%;
 	display: flex;
 	flex-direction: column;
