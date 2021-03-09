@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,34 +104,34 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: "";
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /***************************************************
@@ -145,13 +145,13 @@ table {
  * W. https://svgartista.net
  **************************************************/
 svg .svg-elem-1 {
-	stroke-dashoffset: 686.8287353515625px;
-	stroke-dasharray: 686.8287353515625px;
-	transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+  stroke-dashoffset: 686.8287353516px;
+  stroke-dasharray: 686.8287353516px;
+  transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
 }
 
 svg.active .svg-elem-1 {
-	stroke-dashoffset: 0;
+  stroke-dashoffset: 0;
 }
 
 /***************************************************
@@ -170,120 +170,120 @@ svg.active .svg-elem-1 {
  * W. https://svgartista.net
  **************************************************/
 svg .idea-1 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
 }
 
 svg.active .idea-1 {
-	fill: #ffd15c;
+  fill: #ffd15c;
 }
 
 svg .idea-2 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
 }
 
 svg.active .idea-2 {
-	fill: white;
+  fill: white;
 }
 
 svg .idea-3 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
 }
 
 svg.active .idea-3 {
-	fill: #344a5e;
+  fill: #344a5e;
 }
 
 svg .idea-4 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
 }
 
 svg.active .idea-4 {
-	fill: #344a5e;
+  fill: #344a5e;
 }
 
 svg .idea-5 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
 }
 
 svg.active .idea-5 {
-	fill: #415a6b;
+  fill: #415a6b;
 }
 
 svg .idea-6 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
 }
 
 svg.active .idea-6 {
-	fill: #415a6b;
+  fill: #415a6b;
 }
 
 svg .idea-7 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
 }
 
 svg.active .idea-7 {
-	fill: #ffd15c;
+  fill: #ffd15c;
 }
 
 svg .idea-8 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
 }
 
 svg.active .idea-8 {
-	fill: #ffd15c;
+  fill: #ffd15c;
 }
 
 svg .idea-9 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s;
 }
 
 svg.active .idea-9 {
-	fill: #ffd15c;
+  fill: #ffd15c;
 }
 
 svg .idea-10 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.1s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.1s;
 }
 
 svg.active .idea-10 {
-	fill: #ffd15c;
+  fill: #ffd15c;
 }
 
 svg .idea-11 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s;
 }
 
 svg.active .idea-11 {
-	fill: #ffd15c;
+  fill: #ffd15c;
 }
 
 svg .idea-12 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.3s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.3s;
 }
 
 svg.active .idea-12 {
-	fill: #ffd15c;
+  fill: #ffd15c;
 }
 
 svg .idea-13 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.4s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.4s;
 }
 
 svg.active .idea-13 {
-	fill: #ffd15c;
+  fill: #ffd15c;
 }
 
 /***************************************************
@@ -292,75 +292,75 @@ svg.active .idea-13 {
  * W. https://svgartista.net
  **************************************************/
 svg .ceiling-1 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
 }
 
 svg.active .ceiling-1 {
-	fill: #fec165;
+  fill: #fec165;
 }
 
 svg .ceiling-2 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
 }
 
 svg.active .ceiling-2 {
-	fill: #465a61;
+  fill: #465a61;
 }
 
 svg .ceiling-3 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
 }
 
 svg.active .ceiling-3 {
-	fill: #596c76;
+  fill: #596c76;
 }
 
 svg .ceiling-4 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
 }
 
 svg.active .ceiling-4 {
-	fill: #7a8c98;
+  fill: #7a8c98;
 }
 
 svg .ceiling-5 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
 }
 
 svg.active .ceiling-5 {
-	fill: #fdb441;
+  fill: #fdb441;
 }
 
 svg .ceiling-6 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
 }
 
 svg.active .ceiling-6 {
-	fill: #fdb441;
+  fill: #fdb441;
 }
 
 svg .ceiling-7 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
 }
 
 svg.active .ceiling-7 {
-	fill: #fdb441;
+  fill: #fdb441;
 }
 
 svg .ceiling-8 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
 }
 
 svg.active .ceiling-8 {
-	fill: #596c76;
+  fill: #596c76;
 }
 
 /***************************************************
@@ -369,102 +369,102 @@ svg.active .ceiling-8 {
  * W. https://svgartista.net
  **************************************************/
 svg .spotL-1 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
 }
 
 svg.active .spotL-1 {
-	fill: #c49a6c;
+  fill: #c49a6c;
 }
 
 svg .spotL-2 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
 }
 
 svg.active .spotL-2 {
-	fill: #ffda44;
+  fill: #ffda44;
 }
 
 svg .spotL-3 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
 }
 
 svg.active .spotL-3 {
-	fill: #ffda44;
+  fill: #ffda44;
 }
 
 svg .spotL-4 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
 }
 
 svg.active .spotL-4 {
-	fill: #754c29;
+  fill: #754c29;
 }
 
 svg .spotL-5 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
 }
 
 svg.active .spotL-5 {
-	fill: #ffaf46;
+  fill: #ffaf46;
 }
 
 svg .spotL-6 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
 }
 
 svg.active .spotL-6 {
-	fill: #ffbb60;
+  fill: #ffbb60;
 }
 
 svg .spotL-7 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
 }
 
 svg.active .spotL-7 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 svg .spotL-8 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
 }
 
 svg.active .spotL-8 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 svg .spotL-9 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s;
 }
 
 svg.active .spotL-9 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 svg .spotL-10 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.1s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.1s;
 }
 
 svg.active .spotL-10 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 svg .spotL-11 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s;
 }
 
 svg.active .spotL-11 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 /***************************************************
@@ -473,102 +473,102 @@ svg.active .spotL-11 {
  * W. https://svgartista.net
  **************************************************/
 svg .spotR-1 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
 }
 
 svg.active .spotR-1 {
-	fill: #c49a6c;
+  fill: #c49a6c;
 }
 
 svg .spotR-2 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
 }
 
 svg.active .spotR-2 {
-	fill: #ffda44;
+  fill: #ffda44;
 }
 
 svg .spotR-3 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
 }
 
 svg.active .spotR-3 {
-	fill: #ffda44;
+  fill: #ffda44;
 }
 
 svg .spotR-4 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
 }
 
 svg.active .spotR-4 {
-	fill: #754c29;
+  fill: #754c29;
 }
 
 svg .spotR-5 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
 }
 
 svg.active .spotR-5 {
-	fill: #ffaf46;
+  fill: #ffaf46;
 }
 
 svg .spotR-6 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
 }
 
 svg.active .spotR-6 {
-	fill: #ffbb60;
+  fill: #ffbb60;
 }
 
 svg .spotR-7 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
 }
 
 svg.active .spotR-7 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 svg .spotR-8 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
 }
 
 svg.active .spotR-8 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 svg .spotR-9 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s;
 }
 
 svg.active .spotR-9 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 svg .spotR-10 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.1s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.1s;
 }
 
 svg.active .spotR-10 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 svg .spotR-11 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s;
 }
 
 svg.active .spotR-11 {
-	fill: #f9ff46;
+  fill: #f9ff46;
 }
 
 /***************************************************
@@ -577,939 +577,845 @@ svg.active .spotR-11 {
  * W. https://svgartista.net
  **************************************************/
 svg .hanging-1 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s;
 }
 
 svg.active .hanging-1 {
-	fill: #fcf2a1;
+  fill: #fcf2a1;
 }
 
 svg .hanging-2 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
 }
 
 svg.active .hanging-2 {
-	fill: #fcf2a1;
+  fill: #fcf2a1;
 }
 
 svg .hanging-3 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
 }
 
 svg.active .hanging-3 {
-	fill: #cd7527;
+  fill: #cd7527;
 }
 
 svg .hanging-4 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s;
 }
 
 svg.active .hanging-4 {
-	fill: #cd7527;
+  fill: #cd7527;
 }
 
 svg .hanging-5 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.6s;
 }
 
 svg.active .hanging-5 {
-	fill: #5861c7;
+  fill: #5861c7;
 }
 
 svg .hanging-6 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.7s;
 }
 
 svg.active .hanging-6 {
-	fill: #ff8354;
+  fill: #ff8354;
 }
 
 svg .hanging-7 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.8s;
 }
 
 svg.active .hanging-7 {
-	fill: #ffac8c;
+  fill: #ffac8c;
 }
 
 svg .hanging-8 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.9s;
 }
 
 svg.active .hanging-8 {
-	fill: #5861c7;
+  fill: #5861c7;
 }
 
 svg .hanging-9 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s;
 }
 
 svg.active .hanging-9 {
-	fill: #ff8354;
+  fill: #ff8354;
 }
 
 svg .hanging-10 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.1s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.1s;
 }
 
 svg.active .hanging-10 {
-	fill: #ffac8c;
+  fill: #ffac8c;
 }
 
 svg .hanging-11 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s;
 }
 
 svg.active .hanging-11 {
-	fill: #5861c7;
+  fill: #5861c7;
 }
 
 svg .hanging-12 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.3s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.3s;
 }
 
 svg.active .hanging-12 {
-	fill: #fcf2a1;
+  fill: #fcf2a1;
 }
 
 svg .hanging-13 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.4s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.4s;
 }
 
 svg.active .hanging-13 {
-	fill: #cd7527;
+  fill: #cd7527;
 }
 
 svg .hanging-14 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.5s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.5s;
 }
 
 svg.active .hanging-14 {
-	fill: #ff8354;
+  fill: #ff8354;
 }
 
 svg .hanging-15 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.6s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.6s;
 }
 
 svg.active .hanging-15 {
-	fill: #ffac8c;
+  fill: #ffac8c;
 }
 
 svg .hanging-16 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.7s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.7s;
 }
 
 svg.active .hanging-16 {
-	fill: #6770e6;
+  fill: #6770e6;
 }
 
 svg .hanging-17 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.8s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.8s;
 }
 
 svg.active .hanging-17 {
-	fill: #8f95e6;
+  fill: #8f95e6;
 }
 
 svg .hanging-18 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.9s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.9s;
 }
 
 svg.active .hanging-18 {
-	fill: #e0734a;
+  fill: #e0734a;
 }
 
 svg .hanging-19 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 2s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 2s;
 }
 
 svg.active .hanging-19 {
-	fill: #e0734a;
+  fill: #e0734a;
 }
 
 svg .hanging-20 {
-	fill: transparent;
-	transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 2.1s;
+  fill: transparent;
+  transition: fill 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) 2.1s;
 }
 
 svg.active .hanging-20 {
-	fill: #e0734a;
+  fill: #e0734a;
 }
 
 body {
-	font-size: 16px;
-	font-family: 'Heeboo', sans-serif;
+  font-size: 16px;
+  font-family: "Heeboo", sans-serif;
 }
 
 p {
-	text-shadow: -2px 10px 11px #3d3020;
+  text-shadow: -2px 10px 11px #3d3020;
 }
 
 .hero {
-	background-image: url(/dist/img/energy-poverty_opt.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-x: 75%;
-	display: flex;
-	color: white;
-	font-family: 'Heebo', sans-serif;
-	font-size: 1.2rem;
-	height: 100vh;
-	width: 100%;
+  background-image: url(/dist/img/energy-poverty_opt.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 75%;
+  display: flex;
+  color: white;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.2rem;
+  height: 100vh;
+  width: 100%;
 }
-
 .hero.mobile {
-	justify-content: space-between;
-	flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
 }
-
 @media screen and (min-width: 768px) {
-	.hero.mobile {
-		display: none;
-	}
+  .hero.mobile {
+    display: none;
+  }
 }
-
 .hero.mobile .psudo-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .hero.mobile .psudo-header h1 {
-	margin-left: 5%;
+  margin-left: 5%;
 }
-
 .hero.mobile .psudo-header .hamburger {
-	width: 50px;
-	height: 50px;
-	position: relative;
-	background-color: rgba(0, 0, 0, 0);
-	border: 5px solid rgba(0, 0, 0, 0);
-	cursor: pointer;
-	transition: all 0.3s ease;
-	margin-right: 5%;
-	margin-top: 2%;
-	z-index: 9999;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 5%;
+  margin-top: 2%;
+  z-index: 9999;
 }
-
 @media screen and (min-width: 768px) {
-	.hero.mobile .psudo-header .hamburger {
-		display: none;
-	}
+  .hero.mobile .psudo-header .hamburger {
+    display: none;
+  }
 }
-
 .hero.mobile .psudo-header .hamburger div {
-	height: 2px;
-	width: 30px;
-	background-color: white;
-	position: absolute;
-	transition: all 0.3s ease;
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  transition: all 0.3s ease;
 }
-
 .hero.mobile .psudo-header .hamburger div.hamburgerLineOne {
-	top: 7px;
-	left: 5px;
+  top: 7px;
+  left: 5px;
 }
-
 .hero.mobile .psudo-header .hamburger div.hamburgerLineTwo {
-	top: 17px;
-	left: 5px;
+  top: 17px;
+  left: 5px;
 }
-
 .hero.mobile .psudo-header .hamburger div.hamburgerLineThree {
-	top: 27px;
-	left: 5px;
+  top: 27px;
+  left: 5px;
 }
-
 .hero.mobile .psudo-header .hamburger:hover {
-	border-radius: 50%;
-	transition: all 0.3s ease;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
-
 .hero.mobile .psudo-header .hamburger:hover .hamburgerLineOne {
-	transform: translateY(10px) rotate(45deg);
-	transition: all 0.5s ease;
+  -ms-transform: translateY(10px) rotate(45deg);
+      transform: translateY(10px) rotate(45deg);
+  transition: all 0.5s ease;
 }
-
 .hero.mobile .psudo-header .hamburger:hover .hamburgerLineTwo {
-	opacity: 0;
-	transition: all 0.2s ease;
+  opacity: 0;
+  transition: all 0.2s ease;
 }
-
 .hero.mobile .psudo-header .hamburger:hover .hamburgerLineThree {
-	transform: translateY(-10px) rotate(-45deg);
-	transition: all 0.5s ease;
+  -ms-transform: translateY(-10px) rotate(-45deg);
+      transform: translateY(-10px) rotate(-45deg);
+  transition: all 0.5s ease;
 }
-
 .hero.mobile .psudo-header .hamburger.focus {
-	border-radius: 50%;
-	transition: all 0.3s ease;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
-
 .hero.mobile .psudo-header .hamburger.focus .hamburgerLineOne {
-	transform: translateY(10px) rotate(45deg);
-	transition: all 0.5s ease;
+  -ms-transform: translateY(10px) rotate(45deg);
+      transform: translateY(10px) rotate(45deg);
+  transition: all 0.5s ease;
 }
-
 .hero.mobile .psudo-header .hamburger.focus .hamburgerLineTwo {
-	opacity: 0;
-	transition: all 0.2s ease;
+  opacity: 0;
+  transition: all 0.2s ease;
 }
-
 .hero.mobile .psudo-header .hamburger.focus .hamburgerLineThree {
-	transform: translateY(-10px) rotate(-45deg);
-	transition: all 0.5s ease;
+  -ms-transform: translateY(-10px) rotate(-45deg);
+      transform: translateY(-10px) rotate(-45deg);
+  transition: all 0.5s ease;
 }
-
 .hero.mobile .content {
-	width: 100%;
-	opacity: 0;
-	height: 100vh;
-	display: block;
-	position: absolute;
-	right: 100%;
-	transition: 0.5s;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 100%;
+  opacity: 0;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  right: 100%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .hero.mobile .content .flex {
-	display: flex;
-	height: 50%;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .hero.mobile .content .navigation {
-	padding-left: 0px;
-	text-align: center;
-	font-size: 30px;
-	font-weight: bold;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 100%;
+  padding-left: 0px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
-
 .hero.mobile .content .navigation ul {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-content: center;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  height: 100%;
 }
-
 .hero.mobile .content .navigation ul a {
-	color: white;
-	text-decoration: none;
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	transition: all 0.2s;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 0.2s;
 }
-
 @media screen and (min-width: 768px) {
-	.hero.mobile .content .navigation ul a:before {
-		content: '';
-		overflow: hidden;
-		width: 100%;
-		position: absolute;
-		left: -150%;
-		bottom: 0px;
-		height: 3px;
-		background-color: #aa8409;
-		transition: all 0.3s;
-	}
+  .hero.mobile .content .navigation ul a:before {
+    content: "";
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    left: -150%;
+    bottom: 0px;
+    height: 3px;
+    background-color: #aa8409;
+    transition: all 0.3s;
+  }
 }
-
 .hero.mobile .content .navigation ul a:hover {
-	color: #020202;
-	background-color: #fdd385;
-	box-shadow: 0 0 41px 26px #f7d18b, 0 0 39px 23px #ffa600, 0 0 60px 7px #ffd900;
-	/* outer cyan */
+  color: #020202;
+  background-color: #fdd385;
+  box-shadow: 0 0 41px 26px #f7d18b, 0 0 39px 23px #ffa600, 0 0 60px 7px #ffd900;
+  /* outer cyan */
 }
-
 .hero.mobile .content .navigation ul a:hover:before {
-	left: 0px;
+  left: 0px;
 }
-
 .hero.mobile .content.showing {
-	right: 0px;
-	opacity: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(12, 12, 12, 0.9);
+  right: 0px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(12, 12, 12, 0.9);
 }
-
 .hero.mobile #logo {
-	width: 153px;
-	margin: 5% auto;
+  width: 153px;
+  margin: 5% auto;
 }
-
 .hero.desktop {
-	display: none;
+  display: none;
 }
-
 @media screen and (min-width: 768px) {
-	.hero.desktop {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-	.hero.desktop .psudo-header {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: flex-end;
-		align-items: center;
-		margin: 3% 10%;
-	}
-	.hero.desktop .psudo-header .logo {
-		width: 150px;
-	}
-	.hero.desktop .psudo-header h1 {
-		font-size: 2rem;
-		margin-left: 3%;
-	}
-	.hero.desktop nav {
-		display: flex;
-		justify-content: flex-end;
-		font-size: 1.7rem;
-	}
-	.hero.desktop nav ul {
-		display: flex;
-		justify-content: space-around;
-		min-width: 45%;
-		margin: 1% 5%;
-	}
-	.hero.desktop nav ul li {
-		margin: 1%;
-	}
-	.hero.desktop nav ul li a {
-		color: white;
-		text-decoration: none;
-	}
-	.hero.desktop nav ul li a.active {
-		border-bottom: 2px solid white;
-	}
-	.hero.desktop nav ul li a:hover {
-		background: rgba(184, 172, 109, 0.5);
-		border-radius: 10px;
-		box-shadow: 0px 0px 42px 9px #fae364;
-		transition: ease-in-out 0.3s;
-	}
+  .hero.desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero.desktop .psudo-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 3% 10%;
+  }
+  .hero.desktop .psudo-header .logo {
+    width: 150px;
+  }
+  .hero.desktop .psudo-header h1 {
+    font-size: 2rem;
+    margin-left: 3%;
+  }
+  .hero.desktop nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.7rem;
+  }
+  .hero.desktop nav ul {
+    display: flex;
+    justify-content: space-around;
+    min-width: 45%;
+    margin: 1% 5%;
+  }
+  .hero.desktop nav ul li {
+    margin: 1%;
+  }
+  .hero.desktop nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .hero.desktop nav ul li a.active {
+    border-bottom: 2px solid white;
+  }
+  .hero.desktop nav ul li a:hover {
+    background: rgba(184, 172, 109, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 42px 9px #fae364;
+    transition: ease-in-out 0.3s;
+  }
 }
 
 main .svg-container {
-	height: 100vh;
-	width: 100vw;
-	position: absolute;
-	z-index: 1000;
-	display: flex;
-	justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
 }
-
 main .svg-container svg {
-	position: absolute;
-	height: 100%;
+  position: absolute;
+  height: 100%;
 }
-
 @media screen and (min-width: 768px) {
-	main .second-section {
-		display: flex;
-	}
+  main .second-section {
+    display: flex;
+  }
 }
-
 main .second-section .second-section-picture {
-	background-image: url(/dist/img/opl_IMG_0452.jpeg);
-	background-color: #050505;
-	height: 50vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom;
+  background-image: url(/dist/img/opl_IMG_0452.jpeg);
+  background-color: #050505;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
-
 @media screen and (min-width: 768px) {
-	main .second-section .second-section-picture {
-		height: 87vh;
-		width: 50vw;
-		background-image: url(/dist/img/picSeven.png);
-		background-color: black;
-		background-size: contain;
-	}
+  main .second-section .second-section-picture {
+    height: 87vh;
+    width: 50vw;
+    background-image: url(/dist/img/picSeven.png);
+    background-color: black;
+    background-size: contain;
+  }
 }
-
 main .second-section .about {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: black;
-	color: #a3a3a3;
-	height: 50vh;
-	overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #a3a3a3;
+  height: 50vh;
+  overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
-	main .second-section .about {
-		height: 87vh;
-		width: 50vw;
-	}
+  main .second-section .about {
+    height: 87vh;
+    width: 50vw;
+  }
 }
-
 main .second-section .about .idea-bulb {
-	transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
 }
-
 main .second-section .about .idea-bulb svg {
-	width: 150px;
-	height: 100%;
+  width: 150px;
+  height: 100%;
 }
-
 @media screen and (min-width: 768px) {
-	main .second-section .about .idea-bulb svg {
-		width: 230px;
-		height: 100%;
-	}
+  main .second-section .about .idea-bulb svg {
+    width: 230px;
+    height: 100%;
+  }
 }
-
 main .second-section .about .sec-two-p {
-	text-align: center;
-	width: 70%;
-	line-height: 1.8rem;
-	font-size: 1.1rem;
-	opacity: 0;
+  text-align: center;
+  width: 70%;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  opacity: 0;
 }
-
 main .second-section .about .sec-two-p.active {
-	opacity: 1;
-	transition: opacity 4s ease-in;
+  opacity: 1;
+  transition: opacity 4s ease-in;
 }
-
 main .second-section .about .sec-two-p:hover {
-	text-shadow: -2px 3px 21px #f8f409;
+  text-shadow: -2px 3px 21px #f8f409;
 }
-
 @media screen and (min-width: 768px) {
-	main .second-section .about .sec-two-p {
-		font-size: 1.8rem;
-		line-height: 3rem;
-		text-align: right;
-	}
+  main .second-section .about .sec-two-p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: right;
+  }
 }
-
 main .second-section .about .light-spot {
-	margin-bottom: 5%;
+  margin-bottom: 5%;
 }
-
 main .second-section .about .light-spot img {
-	width: 400px;
-	opacity: 0.4;
+  width: 400px;
+  opacity: 0.4;
 }
-
 @media screen and (min-width: 768px) {
-	main .second-section .about .light-spot img {
-		width: 550px;
-	}
+  main .second-section .about .light-spot img {
+    width: 550px;
+  }
 }
-
 @media screen and (min-width: 768px) {
-	main .third-section {
-		display: flex;
-		flex-direction: row-reverse;
-	}
+  main .third-section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
-
 main .third-section .third-section-picture {
-	background-image: url(/dist/img/1_uD-8jrFwssqXbGAvImPj_Q.jpeg);
-	height: 50vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom;
+  background-image: url(/dist/img/1_uD-8jrFwssqXbGAvImPj_Q.jpeg);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
-
 @media screen and (min-width: 768px) {
-	main .third-section .third-section-picture {
-		height: 87vh;
-		width: 50vw;
-		background-image: url(/dist/img/picTwo.png);
-		background-color: black;
-		background-size: contain;
-	}
+  main .third-section .third-section-picture {
+    height: 87vh;
+    width: 50vw;
+    background-image: url(/dist/img/picTwo.png);
+    background-color: black;
+    background-size: contain;
+  }
 }
-
 main .third-section .about {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: black;
-	color: #a3a3a3;
-	height: 50vh;
-	overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #a3a3a3;
+  height: 50vh;
+  overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
-	main .third-section .about {
-		height: 87vh;
-		width: 50vw;
-	}
+  main .third-section .about {
+    height: 87vh;
+    width: 50vw;
+  }
 }
-
 main .third-section .about .ceiling-lamp svg {
-	width: 150px;
-	height: 100%;
+  width: 150px;
+  height: 100%;
 }
-
 @media screen and (min-width: 768px) {
-	main .third-section .about .ceiling-lamp svg {
-		width: 230px;
-		height: 100%;
-	}
+  main .third-section .about .ceiling-lamp svg {
+    width: 230px;
+    height: 100%;
+  }
 }
-
 main .third-section .about .sec-three-p {
-	text-align: center;
-	width: 70%;
-	font-size: 1.1rem;
-	line-height: 1.8rem;
-	opacity: 0;
+  text-align: center;
+  width: 70%;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  opacity: 0;
 }
-
 main .third-section .about .sec-three-p.active {
-	opacity: 1;
-	transition: opacity 4s ease-in;
+  opacity: 1;
+  transition: opacity 4s ease-in;
 }
-
 main .third-section .about .sec-three-p:hover {
-	text-shadow: -2px 3px 21px #f8f409;
+  text-shadow: -2px 3px 21px #f8f409;
 }
-
 @media screen and (min-width: 768px) {
-	main .third-section .about .sec-three-p {
-		font-size: 1.8rem;
-		line-height: 3rem;
-		text-align: left;
-	}
+  main .third-section .about .sec-three-p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: left;
+  }
 }
-
 main .third-section .about .light-spot {
-	margin-bottom: 5%;
+  margin-bottom: 5%;
 }
-
 main .third-section .about .light-spot img {
-	width: 400px;
-	opacity: 0.4;
+  width: 400px;
+  opacity: 0.4;
 }
-
 @media screen and (min-width: 768px) {
-	main .third-section .about .light-spot img {
-		width: 550px;
-	}
+  main .third-section .about .light-spot img {
+    width: 550px;
+  }
 }
-
 @media screen and (min-width: 768px) {
-	main .fourth-section {
-		display: flex;
-	}
+  main .fourth-section {
+    display: flex;
+  }
 }
-
 main .fourth-section .fourth-section-picture {
-	background-image: url(/dist/img/Child-studying-using-candlelamp-as-light.jpg);
-	height: 50vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom;
+  background-image: url(/dist/img/canon-pro-pascal-maitre-full-frame-africa-1-1140.jpeg);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
-
 @media screen and (min-width: 768px) {
-	main .fourth-section .fourth-section-picture {
-		height: 87vh;
-		width: 50vw;
-		background-image: url(/dist/img/picThree.png);
-		background-color: black;
-		background-size: contain;
-	}
+  main .fourth-section .fourth-section-picture {
+    height: 87vh;
+    width: 50vw;
+    background-image: url(/dist/img/picNine.png);
+    background-color: black;
+    background-size: contain;
+  }
 }
-
 main .fourth-section .about {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: black;
-	color: #a3a3a3;
-	height: 50vh;
-	overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #a3a3a3;
+  height: 50vh;
+  overflow: hidden;
 }
-
 @media screen and (min-width: 768px) {
-	main .fourth-section .about {
-		height: 87vh;
-		width: 50vw;
-	}
+  main .fourth-section .about {
+    height: 87vh;
+    width: 50vw;
+  }
 }
-
 main .fourth-section .about .stage-lights {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
-
 main .fourth-section .about .stage-lights svg {
-	width: 150px;
-	height: 100%;
-	margin: 0 2%;
+  width: 150px;
+  height: 100%;
+  margin: 0 2%;
 }
-
 @media screen and (min-width: 768px) {
-	main .fourth-section .about .stage-lights svg {
-		width: 230px;
-	}
-	main .fourth-section .about .stage-lights svg:last-child {
-		display: none;
-	}
+  main .fourth-section .about .stage-lights svg {
+    width: 230px;
+  }
+  main .fourth-section .about .stage-lights svg:last-child {
+    display: none;
+  }
 }
-
 main .fourth-section .about .sec-four-p {
-	text-align: center;
-	width: 92.5%;
-	line-height: 1.8rem;
-	font-size: 1.1rem;
-	opacity: 0;
+  text-align: center;
+  width: 92.5%;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  opacity: 0;
 }
-
 main .fourth-section .about .sec-four-p.active {
-	opacity: 1;
-	transition: opacity 4s ease-in;
+  opacity: 1;
+  transition: opacity 4s ease-in;
 }
-
 main .fourth-section .about .sec-four-p:hover {
-	text-shadow: -2px 3px 21px #f8f409;
+  text-shadow: -2px 3px 21px #f8f409;
 }
-
 @media screen and (min-width: 768px) {
-	main .fourth-section .about .sec-four-p {
-		font-size: 1.8rem;
-		line-height: 3rem;
-		text-align: right;
-	}
+  main .fourth-section .about .sec-four-p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: right;
+  }
 }
-
 main .fourth-section .about .light-spot {
-	margin-bottom: 5%;
+  margin-bottom: 5%;
 }
-
 main .fourth-section .about .light-spot img {
-	width: 400px;
-	opacity: 0.4;
+  width: 400px;
+  opacity: 0.4;
 }
-
 @media screen and (min-width: 768px) {
-	main .fourth-section .about .light-spot img {
-		width: 550px;
-	}
+  main .fourth-section .about .light-spot img {
+    width: 550px;
+  }
 }
-
 @media screen and (min-width: 768px) {
-	main .fifth-section {
-		display: flex;
-		flex-direction: row-reverse;
-	}
+  main .fifth-section {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
-
 main .fifth-section .fifth-section-picture {
-	background-image: url(/dist/img/kerosene-lamp-africa-light-poverty.jpg);
-	background-color: black;
-	height: 50vh;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: bottom;
+  background-image: url(/dist/img/kerosene-lamp-africa-light-poverty.jpg);
+  background-color: black;
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
-
 @media screen and (min-width: 768px) {
-	main .fifth-section .fifth-section-picture {
-		background-image: url(/dist/img/picSix.png);
-		height: 87vh;
-		width: 50vw;
-	}
+  main .fifth-section .fifth-section-picture {
+    background-image: url(/dist/img/picSix.png);
+    height: 87vh;
+    width: 50vw;
+  }
 }
-
 main .fifth-section .about {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: black;
-	color: #a3a3a3;
-	height: 50vh;
-	overflow: hidden;
-	padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #a3a3a3;
+  height: 50vh;
+  overflow: hidden;
+  padding-bottom: 4rem;
 }
-
 @media screen and (min-width: 768px) {
-	main .fifth-section .about {
-		height: 87vh;
-		width: 50vw;
-		padding-bottom: 0rem;
-	}
+  main .fifth-section .about {
+    height: 87vh;
+    width: 50vw;
+    padding-bottom: 0rem;
+  }
 }
-
 main .fifth-section .about .desk-light {
-	z-index: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 main .fifth-section .about .desk-light svg {
-	width: 150px;
-	height: 100%;
+  width: 150px;
+  height: 100%;
 }
-
 @media screen and (min-width: 768px) {
-	main .fifth-section .about .desk-light svg {
-		width: 230px;
-		height: 100%;
-	}
+  main .fifth-section .about .desk-light svg {
+    width: 230px;
+    height: 100%;
+  }
 }
-
 main .fifth-section .about .sec-five-p {
-	text-align: center;
-	width: 85%;
-	font-size: 1.2rem;
-	margin-bottom: 6%;
-	line-height: 1.8rem;
-	z-index: 1;
-	opacity: 0;
+  text-align: center;
+  width: 85%;
+  font-size: 1.2rem;
+  margin-bottom: 6%;
+  line-height: 1.8rem;
+  z-index: 1;
+  opacity: 0;
 }
-
 main .fifth-section .about .sec-five-p.active {
-	opacity: 1;
-	transition: opacity 4s ease-in;
+  opacity: 1;
+  transition: opacity 4s ease-in;
 }
-
 main .fifth-section .about .sec-five-p:hover {
-	text-shadow: -2px 3px 21px #f8f409;
+  text-shadow: -2px 3px 21px #f8f409;
 }
-
 @media screen and (min-width: 768px) {
-	main .fifth-section .about .sec-five-p {
-		font-size: 1.5rem;
-		line-height: 3rem;
-		text-align: left;
-	}
+  main .fifth-section .about .sec-five-p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: left;
+  }
 }
-
 main .fifth-section .about .light-spot {
-	margin-bottom: 5%;
+  margin-bottom: 5%;
 }
-
 main .fifth-section .about .light-spot img {
-	width: 400px;
-	opacity: 0.4;
+  width: 400px;
+  opacity: 0.4;
 }
-
 @media screen and (min-width: 768px) {
-	main .fifth-section .about .light-spot img {
-		width: 550px;
-	}
+  main .fifth-section .about .light-spot img {
+    width: 550px;
+  }
 }
 
 footer {
-	background-color: #050505;
-	padding: 5%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  background-color: black;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 @media screen and (min-width: 768px) {
-	footer {
-		flex-direction: row;
-		justify-content: space-around;
-		padding: 2%;
-	}
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+  }
 }
-
 footer .legal {
-	color: #a3a3a3;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	line-height: 1.5;
-	width: 100%;
+  color: #a3a3a3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+  width: 100%;
 }
-
 footer .legal span {
-	text-align: center;
+  text-align: center;
 }
-
 @media screen and (min-width: 768px) {
-	footer .legal span {
-		text-align: left;
-	}
+  footer .legal span {
+    text-align: left;
+  }
 }
-
 @media screen and (min-width: 768px) {
-	footer .legal {
-		color: #a3a3a3;
-		display: flex;
-		flex-direction: column;
-		justify-content: normal;
-		align-content: normal;
-		align-items: normal;
-		margin: 0 0;
-		height: 60px;
-		width: 60%;
-	}
+  footer .legal {
+    color: #a3a3a3;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-content: normal;
+    align-items: normal;
+    margin: 0 0;
+    height: 60px;
+    width: 60%;
+  }
 }
-
 footer .socials {
-	display: flex;
-	/* padding: 1rem; */
-	width: 70%;
-	justify-content: space-evenly;
+  display: flex;
+  /* padding: 1rem; */
+  width: 70%;
+  justify-content: space-evenly;
 }
-
 footer .socials a i {
-	font-size: 30px;
-	color: white;
-	margin-top: 15px;
+  font-size: 30px;
+  color: white;
+  margin-top: 15px;
 }
-
 @media screen and (min-width: 768px) {
-	footer .socials a i {
-		margin-top: 0;
-	}
+  footer .socials a i {
+    margin-top: 0;
+  }
 }
-
 footer .socials a i:hover {
-	color: #fae364;
-	transition: ease-in-out 0.3s;
-	transform: rotate(360deg);
+  color: #fae364;
+  transition: ease-in-out 0.3s;
+  -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
 }
-
 /*# sourceMappingURL=main.css.map */
