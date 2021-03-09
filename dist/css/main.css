@@ -1189,19 +1189,25 @@ main .third-section .about .ceiling-lamp svg {
 	}
 }
 
-main .third-section .about p {
+main .third-section .about .sec-three-p {
 	text-align: center;
 	width: 70%;
 	font-size: 1.1rem;
 	line-height: 1.8rem;
+	opacity: 0;
 }
 
-main .third-section .about p:hover {
+main .third-section .about .sec-three-p.active {
+	opacity: 1;
+	transition: opacity 4s ease-in;
+}
+
+main .third-section .about .sec-three-p:hover {
 	text-shadow: -2px 3px 21px #f8f409;
 }
 
 @media screen and (min-width: 768px) {
-	main .third-section .about p {
+	main .third-section .about .sec-three-p {
 		font-size: 1.8rem;
 		line-height: 3rem;
 		text-align: left;
@@ -1286,19 +1292,25 @@ main .fourth-section .about .stage-lights svg {
 	}
 }
 
-main .fourth-section .about p {
+main .fourth-section .about .sec-four-p {
 	text-align: center;
 	width: 92.5%;
 	line-height: 1.8rem;
 	font-size: 1.1rem;
+	opacity: 0;
 }
 
-main .fourth-section .about p:hover {
+main .fourth-section .about .sec-four-p.active {
+	opacity: 1;
+	transition: opacity 4s ease-in;
+}
+
+main .fourth-section .about .sec-four-p:hover {
 	text-shadow: -2px 3px 21px #f8f409;
 }
 
 @media screen and (min-width: 768px) {
-	main .fourth-section .about p {
+	main .fourth-section .about .sec-four-p {
 		font-size: 1.8rem;
 		line-height: 3rem;
 		text-align: right;
@@ -1383,21 +1395,27 @@ main .fifth-section .about .desk-light svg {
 	}
 }
 
-main .fifth-section .about p {
+main .fifth-section .about .sec-five-p {
 	text-align: center;
 	width: 85%;
 	font-size: 1.2rem;
 	margin-bottom: 6%;
 	line-height: 1.8rem;
 	z-index: 1;
+	opacity: 0;
 }
 
-main .fifth-section .about p:hover {
+main .fifth-section .about .sec-five-p.active {
+	opacity: 1;
+	transition: opacity 4s ease-in;
+}
+
+main .fifth-section .about .sec-five-p:hover {
 	text-shadow: -2px 3px 21px #f8f409;
 }
 
 @media screen and (min-width: 768px) {
-	main .fifth-section .about p {
+	main .fifth-section .about .sec-five-p {
 		font-size: 1.5rem;
 		line-height: 3rem;
 		text-align: left;
