@@ -45,7 +45,9 @@ var waypoint3 = new Waypoint({
 	handler: function () {
 		let logo = document.getElementById('ceiling');
 		logo.classList.add('active');
-		console.log('hello world');
+		let par = document.querySelector('.sec-three-p');
+		par.classList.add('active');
+		console.log(par);
 	},
 	offset: 'bottom-in-view',
 });
@@ -62,6 +64,9 @@ var waypoint5 = new Waypoint({
 	handler: function () {
 		let logo = document.getElementById('spot-r');
 		logo.classList.add('active');
+		let par = document.querySelector('.sec-four-p');
+		par.classList.add('active');
+		console.log(par);
 	},
 	offset: 'bottom-in-view',
 });
@@ -70,6 +75,9 @@ var waypoint6 = new Waypoint({
 	handler: function () {
 		let logo = document.getElementById('hanging');
 		logo.classList.add('active');
+		let par = document.querySelector('.sec-five-p');
+		par.classList.add('active');
+		console.log(par);
 	},
 	offset: 'bottom-in-view',
 });
