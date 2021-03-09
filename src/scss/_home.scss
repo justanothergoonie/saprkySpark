@@ -469,16 +469,18 @@ main{
 			flex-direction: row-reverse;
 		}
 		.fifth-section-picture {
-			// background-image: url(/dist/img/4058016965_db02c42403_b.jpg);
-			background-image: url(/dist/img/picFour.png);
+			background-image: url(/dist/img/kerosene-lamp-africa-light-poverty.jpg);
+			
 			background-color: black;
 			height: 50vh;
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: bottom;
 			@include bp-med {
+				background-image: url(/dist/img/picSix.png);
 				height: 87vh;
 				width: 50vw;
+				
 			}
 		}
 		.about {
