@@ -131,29 +131,28 @@
 						display: inline-block;
 						overflow: hidden;
 						transition: all 0.2s;
-					
+
 						&:before {
-							@include bp-med{
-									content: '';
-							overflow: hidden;
-							width: 100%;
-							position: absolute;
-							left: -150%;
-							bottom: 0px;
-							height: 3px;
-							background-color: rgb(170, 132, 9);
-							transition: all 0.3s;
+							@include bp-med {
+								content: '';
+								overflow: hidden;
+								width: 100%;
+								position: absolute;
+								left: -150%;
+								bottom: 0px;
+								height: 3px;
+								background-color: rgb(170, 132, 9);
+								transition: all 0.3s;
 							}
-						
 						}
 						&:hover {
 							color: rgb(2, 2, 2);
 							background-color: rgb(253, 211, 133);
-							box-shadow:
-							0 0 41px 26px rgb(247, 209, 139),  /* inner white */
-							0 0 39px 23px rgb(255, 166, 0), /* middle magenta */
-							0 0 60px 7px rgb(255, 217, 0); /* outer cyan */
-							
+							box-shadow: 0 0 41px 26px rgb(247, 209, 139),
+								/* inner white */ 0 0 39px 23px rgb(255, 166, 0),
+								/* middle magenta */ 0 0 60px 7px
+									rgb(255, 217, 0); /* outer cyan */
+
 							&:before {
 								left: 0px;
 							}
@@ -215,12 +214,12 @@
 							&.active {
 								border-bottom: 2px solid white;
 							}
-							&:hover{
+							&:hover {
 								// color: black;
-								background:rgb(184, 172, 109, .5) ;
+								background: rgba(184, 172, 109, 0.5);
 								border-radius: 10px;
 								box-shadow: 0px 0px 42px 9px rgb(250, 227, 100);
-								transition: ease-in-out .3s;
+								transition: ease-in-out 0.3s;
 							}
 						}
 					}
@@ -229,7 +228,7 @@
 		}
 	}
 }
-main{
+main {
 	// &::before{
 	// 	background-image: url(/dist/img/WaveLine.svg);
 	// 	height: 100px;
@@ -290,18 +289,19 @@ main{
 					}
 				}
 			}
-			p {
+			.sec-two-p {
 				text-align: center;
 				width: 70%;
 				line-height: 1.8rem;
 				font-size: 1.1rem;
-				
-				
-				&:hover{
-					text-shadow: -2px 3px 21px #f8f409;;
+				opacity: 0;
+				&.active {
+					opacity: 1;
+					transition: opacity 4s ease-in;
 				}
-
-
+				&:hover {
+					text-shadow: -2px 3px 21px #f8f409;
+				}
 
 				@include bp-med {
 					font-size: 1.8rem;
@@ -368,8 +368,8 @@ main{
 				width: 70%;
 				font-size: 1.1rem;
 				line-height: 1.8rem;
-				&:hover{
-					text-shadow: -2px 3px 21px #f8f409;;
+				&:hover {
+					text-shadow: -2px 3px 21px #f8f409;
 				}
 				@include bp-med {
 					font-size: 1.8rem;
@@ -395,7 +395,7 @@ main{
 		}
 		.fourth-section-picture {
 			background-image: url(/dist/img/1541578076606.jpeg);
-			
+
 			height: 50vh;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -442,8 +442,8 @@ main{
 				width: 92.5%;
 				line-height: 1.8rem;
 				font-size: 1.1rem;
-				&:hover{
-					text-shadow: -2px 3px 21px #f8f409;;
+				&:hover {
+					text-shadow: -2px 3px 21px #f8f409;
 				}
 				@include bp-med {
 					font-size: 1.8rem;
@@ -470,7 +470,7 @@ main{
 		}
 		.fifth-section-picture {
 			background-image: url(/dist/img/kerosene-lamp-africa-light-poverty.jpg);
-			
+
 			background-color: black;
 			height: 50vh;
 			background-size: contain;
@@ -480,7 +480,6 @@ main{
 				background-image: url(/dist/img/picSix.png);
 				height: 87vh;
 				width: 50vw;
-				
 			}
 		}
 		.about {
@@ -520,8 +519,8 @@ main{
 				margin-bottom: 6%;
 				line-height: 1.8rem;
 				z-index: 1;
-				&:hover{
-					text-shadow: -2px 3px 21px #f8f409;;
+				&:hover {
+					text-shadow: -2px 3px 21px #f8f409;
 				}
 				@include bp-med {
 					font-size: 1.5rem;
@@ -541,10 +540,7 @@ main{
 			}
 		}
 	}
-
-
 }
-
 
 footer {
 	background-color: #050505;
@@ -588,22 +584,22 @@ footer {
 		/* padding: 1rem; */
 		width: 70%;
 		justify-content: space-evenly;
-		
+
 		a {
 			// padding: 5%;
-			
-			i{
-			font-size: 30px;
-			color: white;
-			margin-top: 15px;
-			@include bp-med{
-				margin-top: 0;
-			}
-			&:hover{
-				color: rgb(250, 227, 100);
-				transition: ease-in-out .3s;
-				transform: rotate(360deg)
-			}
+
+			i {
+				font-size: 30px;
+				color: white;
+				margin-top: 15px;
+				@include bp-med {
+					margin-top: 0;
+				}
+				&:hover {
+					color: rgb(250, 227, 100);
+					transition: ease-in-out 0.3s;
+					transform: rotate(360deg);
+				}
 			}
 		}
 	}
