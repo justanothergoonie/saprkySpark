@@ -756,6 +756,12 @@ svg.active .hanging-20 {
   fill: #e0734a;
 }
 
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-size: 16px;
   font-family: "Heeboo", sans-serif;
@@ -947,6 +953,7 @@ p {
   display: none;
 }
 @media screen and (min-width: 768px) {
+<<<<<<< HEAD
   .hero.desktop {
     display: flex;
     flex-direction: column;
@@ -993,6 +1000,54 @@ p {
     background-color: #ffa600;
     box-shadow: 0 0 13px -3px #f7d18b, 0 0 32px 19px #ffa600, 0 0 67px 19px #ffd900;
   }
+=======
+	.hero.desktop {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.hero.desktop .psudo-header {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 3% 10%;
+	}
+	.hero.desktop .psudo-header .logo {
+		width: 150px;
+	}
+	.hero.desktop .psudo-header h1 {
+		font-size: 2rem;
+		margin-left: 3%;
+	}
+	.hero.desktop nav {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 1.7rem;
+	}
+	.hero.desktop nav ul {
+		display: flex;
+		justify-content: space-around;
+		min-width: 65%;
+		margin: 1% 5%;
+	}
+	.hero.desktop nav ul li {
+		margin: 1%;
+	}
+	.hero.desktop nav ul li a {
+		color: white;
+		text-decoration: none;
+	}
+	.hero.desktop nav ul li a.active {
+		border-bottom: 2px solid white;
+	}
+	.hero.desktop nav ul li a:hover {
+		background: rgba(184, 172, 109, 0.5);
+		border-radius: 10px;
+		box-shadow: 0px 0px 42px 9px #fae364;
+		transition: ease-in-out 0.3s;
+	}
+>>>>>>> d1600a373af821953c0122409c41777dcb37ced6
 }
 
 main .svg-container {
