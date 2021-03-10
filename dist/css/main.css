@@ -756,6 +756,12 @@ svg.active .hanging-20 {
 	fill: #e0734a;
 }
 
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 body {
 	font-size: 16px;
 	font-family: 'Heeboo', sans-serif;
@@ -1000,7 +1006,7 @@ p {
 	.hero.desktop nav ul {
 		display: flex;
 		justify-content: space-around;
-		min-width: 45%;
+		min-width: 65%;
 		margin: 1% 5%;
 	}
 	.hero.desktop nav ul li {
