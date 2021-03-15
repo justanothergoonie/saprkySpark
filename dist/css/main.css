@@ -973,52 +973,52 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .hero.desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .hero.desktop .psudo-header {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 3% 10%;
-  }
-  .hero.desktop .psudo-header .logo {
-    width: 150px;
-  }
-  .hero.desktop .psudo-header h1 {
-    font-size: 2rem;
-    margin-left: 3%;
-  }
-  .hero.desktop nav {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1.7rem;
-  }
-  .hero.desktop nav ul {
-    display: flex;
-    justify-content: space-around;
-    min-width: 45%;
-    margin: 1% 5%;
-  }
-  .hero.desktop nav ul li {
-    margin: 1%;
-  }
-  .hero.desktop nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: ease-in-out 0.5s;
-  }
-  .hero.desktop nav ul li a.active {
-    border-bottom: 2px solid white;
-  }
-  .hero.desktop nav ul li a:hover {
-    color: #020202;
-    background-color: #ffa600;
-    box-shadow: 0 0 13px -3px #f7d18b, 0 0 32px 19px #ffa600, 0 0 67px 19px #ffd900;
-  }
+	.hero.desktop {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.hero.desktop .psudo-header {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 3% 10%;
+	}
+	.hero.desktop .psudo-header .logo {
+		width: 150px;
+	}
+	.hero.desktop .psudo-header h1 {
+		font-size: 2rem;
+		margin-left: 3%;
+	}
+	.hero.desktop nav {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 1.7rem;
+	}
+	.hero.desktop nav ul {
+		display: flex;
+		justify-content: space-around;
+		min-width: 45%;
+		margin: 1% 5%;
+	}
+	.hero.desktop nav ul li {
+		margin: 1%;
+	}
+	.hero.desktop nav ul li a {
+		color: white;
+		text-decoration: none;
+		transition: ease-in-out 0.5s;
+	}
+	.hero.desktop nav ul li a.active {
+		border-bottom: 2px solid white;
+	}
+	.hero.desktop nav ul li a:hover {
+		color: #020202;
+		background-color: #ffa600;
+		box-shadow: 0 0 13px -3px #f7d18b, 0 0 32px 19px #ffa600, 0 0 67px 19px #ffd900;
+	}
 }
 
 main .svg-container {

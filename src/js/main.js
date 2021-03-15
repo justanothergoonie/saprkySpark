@@ -56,6 +56,9 @@ var waypoint4 = new Waypoint({
 	handler: function () {
 		let logo = document.getElementById('spot-l');
 		logo.classList.add('active');
+		let par = document.querySelector('.sec-four-p');
+		par.classList.add('active');
+		console.log(par);
 	},
 	offset: 'bottom-in-view',
 });
@@ -64,9 +67,6 @@ var waypoint5 = new Waypoint({
 	handler: function () {
 		let logo = document.getElementById('spot-r');
 		logo.classList.add('active');
-		let par = document.querySelector('.sec-four-p');
-		par.classList.add('active');
-		console.log(par);
 	},
 	offset: 'bottom-in-view',
 });
