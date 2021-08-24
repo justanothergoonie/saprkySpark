@@ -847,7 +847,8 @@ p {
 }
 
 .hero.mobile .psudo-header .hamburger:hover .hamburgerLineOne {
-	transform: translateY(10px) rotate(45deg);
+	-webkit-transform: translateY(10px) rotate(45deg);
+	        transform: translateY(10px) rotate(45deg);
 	transition: all 0.5s ease;
 }
 
@@ -857,7 +858,8 @@ p {
 }
 
 .hero.mobile .psudo-header .hamburger:hover .hamburgerLineThree {
-	transform: translateY(-10px) rotate(-45deg);
+	-webkit-transform: translateY(-10px) rotate(-45deg);
+	        transform: translateY(-10px) rotate(-45deg);
 	transition: all 0.5s ease;
 }
 
@@ -867,7 +869,8 @@ p {
 }
 
 .hero.mobile .psudo-header .hamburger.focus .hamburgerLineOne {
-	transform: translateY(10px) rotate(45deg);
+	-webkit-transform: translateY(10px) rotate(45deg);
+	        transform: translateY(10px) rotate(45deg);
 	transition: all 0.5s ease;
 }
 
@@ -877,7 +880,8 @@ p {
 }
 
 .hero.mobile .psudo-header .hamburger.focus .hamburgerLineThree {
-	transform: translateY(-10px) rotate(-45deg);
+	-webkit-transform: translateY(-10px) rotate(-45deg);
+	        transform: translateY(-10px) rotate(-45deg);
 	transition: all 0.5s ease;
 }
 
@@ -1079,7 +1083,8 @@ main .second-section .about {
 }
 
 main .second-section .about .idea-bulb {
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
 }
 
 main .second-section .about .idea-bulb svg {
